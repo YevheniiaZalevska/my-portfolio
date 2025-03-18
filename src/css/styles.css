@@ -12,4 +12,6 @@
 
 /* Sections style */
 @import url('./partials/header.css');
+@import url('./partials/hero.css');
+@import url('./partials/about-me.css');
 @import url('./partials/footer.css');
