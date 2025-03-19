@@ -21,7 +21,7 @@
 
 
 /* Scroll to Top Button */
-#scrollToTop {
+.scrollToTop {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -42,13 +42,13 @@
   visibility: hidden;
 }
 
-#scrollToTop:hover {
+.scrollToTop:hover {
   background: #fff;
   color: #ff758c;
   transform: scale(1.1);
 }
 
-#scrollToTop.show {
+.scrollToTop.show {
   opacity: 1;
   visibility: visible;
 }
