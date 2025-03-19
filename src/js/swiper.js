@@ -11,7 +11,7 @@ const swiper = new Swiper('.swiper-container', {
   speed: 1200, // Плавна анімація
   slidesPerView: 1, // За замовчуванням 1 слайд
   spaceBetween: 20, // Відстань між слайдами
-  centeredSlides: false, // Центруємо лише на мобільних
+  // centeredSlides: false, // Центруємо лише на мобільних
   observer: true, // Відслідковує зміни у DOM
   observeParents: true, // Відслідковує зміни у батьківських елементах
 
