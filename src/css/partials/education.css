@@ -1,0 +1,75 @@
+/* Общие стили для header, hero, about-me, projects и education */
+header {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* EDUCATION SECTION */
+.education-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.education-content,
+.education-lang {
+    margin-bottom: 20px;
+}
+
+.education-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffedba;
+}
+
+.education-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.education-item {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-text {
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .education-list {
+        max-width: 100%;
+    }
+}
