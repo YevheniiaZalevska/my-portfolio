@@ -41,16 +41,16 @@
 .swiper-button-next,
 .swiper-button-prev {
     position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 50px;
-        height: 50px;
-        background: rgba(255, 255, 255, 0.5);
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
 }
 
 .swiper-button-next:hover,
@@ -62,7 +62,7 @@
 .swiper-button-next::after,
 .swiper-button-prev::after {
     font-size: 24px;
-        color: #ff758c;
+    color: #ff758c;
 }
 
 .swiper-button-prev {
@@ -135,13 +135,51 @@
 
 .project-item-text {
     font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    text-align: center;
-    flex-grow: 1;
-    overflow: hidden;
-    min-height: auto;
+        line-height: 1.6;
+        margin-bottom: 15px;
+        text-align: center;
+        flex-grow: 1;
+        overflow-y: auto;
+        max-height: 100px;
+        /* Ограничиваем высоту */
+        padding-right: 5px;
+        /* Отступ для скролла */
+        scrollbar-width: thin;
+        /* Тонкий скроллбар для Firefox */
+        scrollbar-color: rgba(248, 93, 119, 0.3) transparent;
+            /* Менее заметный цвет */
 }
+
+/* Стили для скроллбара в Chrome, Edge */
+.project-item-text::-webkit-scrollbar {
+    width: 4px;
+    /* Узкий скролл */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.project-item-text:hover::-webkit-scrollbar {
+    opacity: 1;
+    /* Показывать только при наведении */
+}
+
+.project-item-text::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.project-item-text::-webkit-scrollbar-thumb {
+    background: rgba(255, 117, 140, 0.5);
+    /* Полупрозрачный */
+    border-radius: 10px;
+}
+
+.project-item-text::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 78, 106, 0.8);
+    /* Ярче при наведении */
+}
+
+
+
 
 .project-btn-content {
     display: flex;
