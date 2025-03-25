@@ -1,4 +1,4 @@
-/* HERO SECTION */
+
 .hero {
     padding-top: 100px;
     padding-bottom: 80px;
@@ -28,6 +28,35 @@
     font-weight: 700;
     color: #6f00ff;
     margin: 0;
+}
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 2px solid #6f00ff;
+    /* мигающий курсор */
+    white-space: nowrap;
+    letter-spacing: 2px;
+    animation: typing 3s steps(20, end), blink 0.7s infinite;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #6f00ff;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
 
 .hero-name {
@@ -65,9 +94,22 @@
     transform: scale(1.05);
 }
 
-/* PROFILE IMAGE */
 .hero-profile {
     padding: 2rem;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
 }
 
 .hero-img {
@@ -75,11 +117,40 @@
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #6f00ff;
-    transition: transform 0.4s ease;
+    animation: float 1s ease-in-out infinite;
 }
 
-.hero-img:hover {
-    transform: scale(1.05) rotate(2deg);
+.fade-in {
+    animation: fadeIn 1s ease-in-out both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-icons {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.hero-icons a {
+    color: #f0f0f0;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.hero-icons a:hover {
+    color: #6f00ff;
+    transform: scale(1.2);
 }
 
 @media (max-width: 1024px) {
