@@ -20,3 +20,29 @@ ScrollReveal().reveal('.list2', {
   duration: 1000,
   origin: 'right'
 });
+
+
+// Education Section
+ScrollReveal().reveal('.education-title', {
+  delay: 200,
+  distance: '30px',
+  duration: 800,
+  origin: 'top'
+});
+
+ScrollReveal().reveal('.education-item', {
+  delay: 300,
+  distance: '40px',
+  duration: 900,
+  origin: 'bottom',
+  interval: 200
+});
+
+
+// Certificates Section
+ScrollReveal().reveal('.cert-btn-content', {
+  delay: 300,
+  distance: '40px',
+  duration: 900,
+  origin: 'bottom'
+});
