@@ -1,87 +1,93 @@
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    position: relative;
-}
-
-/* FOOTER SECTION */
-footer {
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
-    padding: 30px 0;
-    text-align: center;
-    color: #fff;
+#contacts {
+    background: #0f3460;
+    color: #f0f0f0;
+    padding: 60px 0;
+    font-size: 1rem;
 }
 
 .footer-content {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
 }
 
 .footer-title {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #ffedba;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #6f00ff;
+    position: relative;
+    text-align: center;
+}
+
+.footer-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #6f00ff;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
 }
 
 .footer-dectop {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.5rem;
 }
 
 .footer-soc-list {
-    list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 1.5rem;
+    list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 .footer-soc-item a {
-    font-size: 24px;
-    color: #fff;
-    transition: color 0.3s ease-in-out, transform 0.2s;
+    font-size: 1.5rem;
+    color: #f0f0f0;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .footer-soc-item a:hover {
-    color: #ffd700;
-    transform: scale(1.1);
+    color: #6f00ff;
+    transform: scale(1.2);
 }
 
 .footer-address-list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
 }
 
 .footer-address-item a {
-    font-size: 18px;
-    color: #fff;
+    color: #cccccc;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer-address-item a:hover {
-    color: #ffd700;
+    color: #6f00ff;
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
-    .footer-dectop {
-        flex-direction: column;
-        text-align: center;
+    .footer-title {
+        font-size: 1.6rem;
     }
 
     .footer-soc-list {
-        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footer-address-item a {
+        font-size: 0.95rem;
     }
 }

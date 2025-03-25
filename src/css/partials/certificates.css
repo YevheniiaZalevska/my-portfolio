@@ -1,78 +1,91 @@
-/* Общие стили для header, hero, about-me, projects и education */
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+#education {
+    padding: 100px 0;
+    background: linear-gradient(to right, #1a1a2e, #0f3460);
+    color: #f0f0f0;
     position: relative;
-}
-
-/* EDUCATION SECTION */
-.education-container {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 20px;
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    color: #fff;
     overflow: hidden;
 }
 
+.education-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
 .education-title {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #ffedba;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #6f00ff;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.education-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #6f00ff;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
 }
 
 .cert-btn-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 1.5rem;
+    border-radius: 12px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-btn {
+    background-color: #6f00ff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(111, 0, 255, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cert-btn:hover {
+    background-color: #5000cc;
+    transform: scale(1.05);
 }
 
 .project-img {
     width: 250px;
-    height: 250px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    border: 2px solid #6f00ff;
+    transition: transform 0.3s ease;
 }
 
-.cert-btn {
-    background: #ffd700;
-    color: #333;
-    border: none;
-    padding: 14px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-    text-decoration: none;
-    display: inline-block;
+.project-img:hover {
+    transform: scale(1.05);
 }
 
-.cert-btn:hover {
-    background: #fff;
-    color: #ff758c;
-    transform: scale(1.1);
-}
-
-/* Адаптивность */
 @media (max-width: 768px) {
     .cert-btn-content {
-        width: 100%;
-        padding: 10px;
+        padding: 1.5rem;
+    }
+
+    .education-title {
+        font-size: 1.6rem;
+    }
+
+    .cert-btn {
+        font-size: 0.95rem;
+        padding: 0.6rem 1.2rem;
+    }
+
+    .project-img {
+        width: 160px;
     }
 }

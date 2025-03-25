@@ -66,11 +66,11 @@
     margin: 0;
 }
 
-.hero-text {
+.about-me-text {
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.8;
     color: #cccccc;
-    max-width: 500px;
+    text-align: justify;
 }
 
 .hero-btn-content {
@@ -118,23 +118,6 @@
     object-fit: cover;
     border: 2px solid #6f00ff;
     animation: float 1s ease-in-out infinite;
-}
-
-.hero-icons {
-    margin-top: 1.5rem;
-    display: flex;
-    gap: 1.5rem;
-    font-size: 1.5rem;
-}
-
-.hero-icons a {
-    color: #f0f0f0;
-    transition: transform 0.3s, color 0.3s;
-}
-
-.hero-icons a:hover {
-    color: #6f00ff;
-    transform: scale(1.2);
 }
 
 @media (max-width: 1024px) {
