@@ -120,22 +120,6 @@
     animation: float 1s ease-in-out infinite;
 }
 
-.fade-in {
-    animation: fadeIn 1s ease-in-out both;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 .hero-icons {
     margin-top: 1.5rem;
     display: flex;
