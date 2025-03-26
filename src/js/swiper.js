@@ -61,15 +61,22 @@ const swiper = new Swiper('.swiper-container', {
 });
 
 
-// Отключение свайпа при касании на кнопки
-const projectButtons = document.querySelectorAll('.project-item-text');
+// Блокировка свайпа при касании на интерактивные элементы
+function blockSwipeOnTouch(elementSelector) {
+  const interactiveEls = document.querySelectorAll(elementSelector);
 
-projectButtons.forEach((btn) => {
-  btn.addEventListener('touchstart', () => {
-    swiper.allowTouchMove = false;
-  });
+  interactiveEls.forEach(el => {
+    el.addEventListener('touchstart', e => {
+      e.stopPropagation(); // остановим распространение события
+      swiper.allowTouchMove = false;
+    });
 
-  btn.addEventListener('touchend', () => {
-    swiper.allowTouchMove = true;
+    el.addEventListener('touchend', () => {
+      swiper.allowTouchMove = true;
+    });
   });
-});
+}
+
+// Применяем к кнопкам и тексту
+blockSwipeOnTouch('.project-btn, .project-item-text');
+
