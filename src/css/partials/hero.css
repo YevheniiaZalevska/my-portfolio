@@ -1,20 +1,20 @@
-
 .hero {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 80px;
+    background: linear-gradient(to right, #1a1a2e, #0f3460);
+    color: #f0f0f0;
+}
+
+.hero-content {
+    max-width: 1000px;
+    padding: 0 2rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(to right, #1a1a2e, #0f3460);
-    color: #f0f0f0;
     position: relative;
     overflow: hidden;
-}
-
-.container.hero-content {
-    max-width: 600px;
-    padding: 0 2rem;
+    flex-direction: row;
 }
 
 .hero-description {
@@ -43,6 +43,28 @@
     color: #6f00ff;
 }
 
+.about-me-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #cccccc;
+    text-align: justify;
+}
+
+.hero-icon {
+    display: inline-block;
+    animation: float 1s ease-in-out infinite;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    color: #6f00ff;
+}
+
+.hero-name {
+    font-weight: 600;
+    color: #6f00ff;
+    margin: 0;
+    font-size: larger;
+}
+
 @keyframes typing {
     from {
         width: 0;
@@ -59,20 +81,6 @@
     }
 }
 
-.hero-name {
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #ffffff;
-    margin: 0;
-}
-
-.about-me-text {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #cccccc;
-    text-align: justify;
-}
-
 .hero-btn-content {
     margin-top: 1.5rem;
 }
@@ -87,6 +95,7 @@
     text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 0 10px rgba(111, 0, 255, 0.3);
+    animation: float 2s ease-in-out infinite;
 }
 
 .hero-btn:hover {
@@ -96,6 +105,16 @@
 
 .hero-profile {
     padding: 2rem;
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img {
+    width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #6f00ff;
 }
 
 @keyframes float {
@@ -112,14 +131,6 @@
     }
 }
 
-.hero-img {
-    width: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #6f00ff;
-    animation: float 1s ease-in-out infinite;
-}
-
 @media (max-width: 1024px) {
     .hero {
         flex-direction: column;
@@ -127,12 +138,14 @@
         text-align: center;
     }
 
-    .container.hero-content {
-        max-width: 100%;
-        padding: 1rem 2rem;
+    .hero-profile {
+        padding: 2rem 0 0 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
-    .hero-profile {
-        margin-top: 2rem;
+    .hero-img {
+        margin-right: 0;
     }
 }
