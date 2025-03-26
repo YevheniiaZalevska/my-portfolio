@@ -78,5 +78,5 @@ function blockSwipeOnTouch(elementSelector) {
 }
 
 // Применяем к кнопкам и тексту
-blockSwipeOnTouch('.project-btn, .project-item-text');
+blockSwipeOnTouch('.project-btn, .project-item-text, .project-item');
 
