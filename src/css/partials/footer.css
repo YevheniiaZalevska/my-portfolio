@@ -79,9 +79,9 @@
 }
 
 @media (max-width: 768px) {
-    .footer-title {
+    /* .footer-title {
         font-size: 1.6rem;
-    }
+    } */
 
     .footer-soc-list {
         gap: 1rem;
