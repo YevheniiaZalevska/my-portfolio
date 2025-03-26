@@ -51,6 +51,7 @@
     font-size: 1rem;
     box-shadow: 0 0 10px rgba(111, 0, 255, 0.3);
     transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: float 2s ease-in-out infinite;
 }
 
 .cert-btn:hover {
