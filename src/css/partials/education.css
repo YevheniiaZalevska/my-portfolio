@@ -1,6 +1,4 @@
-
 #education {
-    padding: 100px 0;
     background: linear-gradient(to right, #0f3460, #1a1a2e);
     color: #f0f0f0;
     position: relative;
@@ -10,7 +8,6 @@
 .education-container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -20,7 +17,6 @@
     font-size: 2rem;
     font-weight: 700;
     color: #6f00ff;
-    margin-bottom: 1rem;
     position: relative;
 }
 
@@ -30,7 +26,6 @@
     width: 60px;
     height: 3px;
     background-color: #6f00ff;
-    margin-top: 0.4rem;
     border-radius: 2px;
 }
 
