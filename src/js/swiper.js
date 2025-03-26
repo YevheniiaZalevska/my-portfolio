@@ -4,7 +4,7 @@ const swiper = new Swiper('.swiper-container', {
   loop: true, // Безкінечний цикл
   loopAdditionalSlides: 3, // Додає додаткові слайди для плавного циклу
   autoplay: {
-    delay: 6000, // Оптимальна пауза між слайдами
+    delay: 4000, // Оптимальна пауза між слайдами
     disableOnInteraction: false, // Авто-прокрутка не зупиняється після взаємодії
     pauseOnMouseEnter: true, // Авто-прокрутка зупиняється при наведенні миші
   },
