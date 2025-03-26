@@ -4,7 +4,7 @@ const swiper = new Swiper('.swiper-container', {
   loop: true, // Безкінечний цикл
   loopAdditionalSlides: 3, // Додає додаткові слайди для плавного циклу
   autoplay: {
-    delay: 2000, // Оптимальна пауза між слайдами
+    delay: 6000, // Оптимальна пауза між слайдами
     disableOnInteraction: false, // Авто-прокрутка не зупиняється після взаємодії
     pauseOnMouseEnter: true, // Авто-прокрутка зупиняється при наведенні миші
   },
@@ -61,22 +61,11 @@ const swiper = new Swiper('.swiper-container', {
 });
 
 
-// Блокировка свайпа при касании на интерактивные элементы
-function blockSwipeOnTouch(elementSelector) {
-  const interactiveEls = document.querySelectorAll(elementSelector);
+// При касании пальцем ставим autoplay на паузу (мобильные устройства)
+swiper.el.addEventListener('touchstart', () => {
+  swiper.autoplay.stop();
+});
 
-  interactiveEls.forEach(el => {
-    el.addEventListener('touchstart', e => {
-      e.stopPropagation(); // остановим распространение события
-      swiper.allowTouchMove = false;
-    });
-
-    el.addEventListener('touchend', () => {
-      swiper.allowTouchMove = true;
-    });
-  });
-}
-
-// Применяем к кнопкам и тексту
-blockSwipeOnTouch('.project-btn, .project-item-text, .project-item');
-
+swiper.el.addEventListener('touchend', () => {
+  swiper.autoplay.start();
+});
