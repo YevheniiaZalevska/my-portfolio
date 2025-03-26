@@ -59,3 +59,17 @@ const swiper = new Swiper('.swiper-container', {
     // },
   },
 });
+
+
+// Отключение свайпа при касании на кнопки
+const projectButtons = document.querySelectorAll('.project-item-text');
+
+projectButtons.forEach((btn) => {
+  btn.addEventListener('touchstart', () => {
+    swiper.allowTouchMove = false;
+  });
+
+  btn.addEventListener('touchend', () => {
+    swiper.allowTouchMove = true;
+  });
+});
