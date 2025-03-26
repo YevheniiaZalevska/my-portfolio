@@ -137,6 +137,12 @@ header {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
+@media (min-width: 769px) {
+    .burger-menu {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-menu {
         position: absolute;

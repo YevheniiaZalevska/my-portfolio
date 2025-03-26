@@ -49,6 +49,12 @@
     padding: 1rem 1.5rem;
     box-shadow: 0 0 20px rgba(111, 0, 255, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .education-item:hover {
