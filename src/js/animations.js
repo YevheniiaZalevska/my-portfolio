@@ -1,11 +1,6 @@
-//  About Me
-ScrollReveal().reveal('.about-me-text', {
-  delay: 200,
-  distance: '30px',
-  duration: 800,
-  origin: 'bottom'
-});
 
+
+//  About Me
 ScrollReveal().reveal('.list2', {
   delay: 400,
   distance: '40px',
