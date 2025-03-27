@@ -6,19 +6,19 @@ ScrollReveal().reveal('.about-me-text', {
   origin: 'bottom'
 });
 
+ScrollReveal().reveal('.list2', {
+  delay: 400,
+  distance: '40px',
+  duration: 1000,
+  origin: 'right'
+});
+
 ScrollReveal().reveal('.about-tech-content', {
   delay: 300,
   distance: '40px',
   duration: 900,
   origin: 'left',
   interval: 200
-});
-
-ScrollReveal().reveal('.list2', {
-  delay: 400,
-  distance: '40px',
-  duration: 1000,
-  origin: 'right'
 });
 
 
