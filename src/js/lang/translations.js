@@ -1,36 +1,51 @@
-// aboutElement.innerHTML = translations[lang].about_text;
-
 export const translations = {
   en: {
-    skills: "My skills",
+    hero_name: "Yevheniia Zalevska",
+    about_text: `<i class="fas fa-hand-paper hero-icon"></i> Hi, I’m <strong class="hero-name">\${name}</strong>. I like solving problems and looking for different solutions. My goal is to constantly improve my skills and create valuable digital products. I am inspired to work on new projects and gain experience. I have sound knowledge of HTML, CSS, JavaScript, and React. Also, I have hands-on experience in following Agile/Scrum methodology when working in a team. I am a fast learner, responsible, and ready for challenging tasks. In my free time I like to dance and paint. I am a creative person and always have a positive attitude towards new tasks.`,
     projects: "Projects",
     education: "Education",
     contacts: "Contacts",
-     hero_name: "Yevheniia Zalevska",
-    about_text: 'Hi, I’m <strong class="hero-name" data-lang="hero_name">Yevheniia Zalevska</strong>. I like solving problems and looking for different solutions. My goal is to constantly improve my skills and create valuable digital products. I am inspired to work on new projects and gain experience. I have sound knowledge of HTML, CSS, JavaScript, and React. Also, I have hands-on experience in following Agile/Scrum methodology when working in a team. I am a fast learner, responsible, and ready for challenging tasks. In my free time I like to dance and paint. I am a creative person and always have a positive attitude towards new tasks.',
-
-    
-    soft: "Soft Skills",
-    languages: "Languages",
-    certificates: "Certificates",
-    downloadCV: "Download CV",
-    live: "Live page",
-    code: "View Code"
+    skills: "My Skills",
+    tbnh: "Download CV",
+    tech: "Tech Skills:",
+    techn: "Frontend Technologies:",
+    tools: "Tools",
+    mathod: "Methodologies:",
+    sof: "Soft Skills:",
+    soft: `<i class="fas fa-handshake about-icon"></i> Teamwork: Successfully collaborated with cross-functional teams on multiple projects`,
+    soft1: `<i class="fas fa-user-check about-icon"></i> Customer focus`,
+    soft2: `<i class="fas fa-bullseye about-icon"></i> Goal setting`,
+    soft3: `<i class="fas fa-clock about-icon"></i> Time management`,
+    soft4: `<i class="fas fa-lightbulb about-icon"></i> Critical thinking`,
+    1: "Developed a Phonebook application in React to store contacts. Used state (useState) to manage the contact list and filtering. Implemented validation of input data and uniqueness of contacts. Added styling using CSS and responsive design. Used local storage (localStorage) to store contacts between sessions. A simple phonebook connected to Swagger backend API - you can register, log in, add, remove or filter contacts, log out.",
+    btn: `<i class="fa-brands fa-github"></i> View Code`,
+    btn1: `<i class="fa-solid fa-earth-europe"></i> Live page`,
+    2: "GreenHarvest - is a web platform dedicated to sustainable living and eco-friendly consumption. The site offers tips, articles, and ideas to help reduce environmental impact. Its design features natural tones, creating a sense of harmony with nature.",
+    3: "Filmoteka is a web application for searching movies using TMDB API. Users can enter a movie title and view its description, genres, trailer, rating, and poster. Clicking on a movie opens a modal window with detailed information. The site has a responsive design and runs on React + Vite, deployed on Vercel.",
+    4: "This is a website for selling chocolate, which includes information on the preparation method, ingredients and assortment. Responsive design, transform effects, modal windows.",
+    5: " WebStudio is a school for increasing client flow and sales for your business through digital marketing and growth solutions.",
+    6: "This is an emoji memory game in which the player must find pairs of identical fruits.",
+    7: "This is a site where you can see the weather in any city.",
+    8: "This website is a landing page for a food delivery service, created using HTML, CSS, and JavaScript. It includes sections with the menu, company information, and contact details. The project demonstrates responsive design, animations, and basic interactive elements, such as navigation between sections of the page.",
+    9: "This website is a landing page for the YachtJet company, which offers luxury yacht rentals. The site features sections with company information, a yacht gallery, a list of services, and a contact form. The project showcases a stylish design, smooth animations, and responsive layout for comfortable viewing on different devices.",
+    edu_it: `<span class="edu-school">University Merito WSB</span> — <span class="edu-role">Frontend Developer, Engineering degree</span><br /><span class="edu-dates">2022 – now</span>`,
+    educ_col: `<span class="edu-school">IT School GoIT</span> — <span class="edu-role">Frontend Developer Course, Certificate Program</span><br /><span class="edu-dates">2023 – 2025</span>`,
+    lang: "Languages:",
+    lang_ua: "Ukrainian - Native",
+    lang_en: "English - Intermediate",
+    lang_pl: "Polish - Intermediate",
+    certificates: "My certification:",
+    tbnc: "Download Certificate"
   },
-
   ua: {
-    home: "Головна",
-    about: "Про мене",
+    hero_name: "Євгенія Залевська",
+    about_text: `<i class="fas fa-hand-paper hero-icon"></i> Привіт, я <strong class="hero-name">\${name}</strong>. Я люблю вирішувати задачі та шукати різні рішення. Моя мета — постійно покращувати навички та створювати корисні цифрові продукти. Мене надихає робота над новими проєктами й отримання досвіду. Я маю добрі знання HTML, CSS, JavaScript і React. Також маю практичний досвід роботи за методологією Agile/Scrum у команді. Я швидко навчаюсь, відповідальна і готова до складних завдань. У вільний час люблю танцювати та малювати. Я — творча лю...`,
     projects: "Проєкти",
     education: "Освіта",
     contacts: "Контакти",
     skills: "Навички",
-    tools: "Інструменти",
-    soft: "Гнучкі навички",
-    languages: "Мови",
-    certificates: "Сертифікати",
-    downloadCV: "Завантажити CV",
-    live: "Переглянути",
-    code: "Код"
+    edu_it: `<span class="edu-school">Університет Merito WSB</span> — <span class="edu-role">Фронтенд-розробник, Інженерний ступінь</span><br /><span class="edu-dates">2022 – дотепер</span>`,
+    educ_col: `<span class="edu-school">IT School GoIT</span> — <span class="edu-role">Курс Frontend Developer, Сертифікатна програма</span><br /><span class="edu-dates">2023 – 2025</span>`,
+
   }
 };
