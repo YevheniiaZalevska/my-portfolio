@@ -2,10 +2,10 @@ export const translations = {
   en: {
     hero_name: "Yevheniia Zalevska",
     about_text: `<i class="fas fa-hand-paper hero-icon"></i> Hi, I’m <strong class="hero-name">\${name}</strong>. I like solving problems and looking for different solutions. My goal is to constantly improve my skills and create valuable digital products. I am inspired to work on new projects and gain experience. I have sound knowledge of HTML, CSS, JavaScript, and React. Also, I have hands-on experience in following Agile/Scrum methodology when working in a team. I am a fast learner, responsible, and ready for challenging tasks. In my free time I like to dance and paint. I am a creative person and always have a positive attitude towards new tasks.`,
-    projects: "Projects",
-    education: "Education",
-    contacts: "Contacts",
-    skills: "My Skills",
+    projects: `Projects <i class="fas fa-tools h-icon"></i>`,
+    education: `Education <i class="fas fa-user-graduate h-icon"></i>`,
+    contacts: `Contacts <i class="fas fa-paper-plane h-icon"></i>`,
+    skills: `My Skills <i class="fas fa-cogs h-icon"></i>`,
     tbnh: "Download CV",
     tech: "Tech Skills:",
     techn: "Frontend Technologies:",
@@ -30,11 +30,11 @@ export const translations = {
     9: "This website is a landing page for the YachtJet company, which offers luxury yacht rentals. The site features sections with company information, a yacht gallery, a list of services, and a contact form. The project showcases a stylish design, smooth animations, and responsive layout for comfortable viewing on different devices.",
     edu_it: `<span class="edu-school">University Merito WSB</span> — <span class="edu-role">Frontend Developer, Engineering degree</span><br /><span class="edu-dates">2022 – now</span>`,
     educ_col: `<span class="edu-school">IT School GoIT</span> — <span class="edu-role">Frontend Developer Course, Certificate Program</span><br /><span class="edu-dates">2023 – 2025</span>`,
-    lang: "Languages:",
+    lang: `Languages <i class="fas fa-language h-icon"></i>`,
     lang_ua: "Ukrainian - Native",
     lang_en: "English - Intermediate",
     lang_pl: "Polish - Intermediate",
-    certificates: "My certification:",
+    certificates: `My certification <i class="fas fa-award h-icon"></i>`,
     tbnc: "Download Certificate"
   },
   ua: {
