@@ -51,7 +51,7 @@
     font-size: 1rem;
     box-shadow: 0 0 10px rgba(111, 0, 255, 0.3);
     transition: background-color 0.3s ease, transform 0.3s ease;
-    animation: float 2s ease-in-out infinite;
+    animation: float 1s ease-in-out infinite;
 }
 
 .cert-btn:hover {
@@ -75,10 +75,6 @@
     .cert-btn-content {
         padding: 1.5rem;
     }
-
-    /* .education-title {
-        font-size: 1.6rem;
-    } */
 
     .cert-btn {
         font-size: 0.95rem;
