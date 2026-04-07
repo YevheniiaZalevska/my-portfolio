@@ -1,9 +1,7 @@
 export const translations = {
   en: {
     hero_name: "Yevheniia Zalevska",
-    about_text: `<i class="fas fa-hand-paper hero-icon"></i> Hi! My name is <strong class="hero-name">\${name}</strong>. I'm focus on building modern and dynamic websites that look great and work smoothly on any device.<br />
-    I help clients turn their ideas into beautiful, user-friendly web experiences. You don’t need to worry about the technical stuff — I’ll take care of layout, animations, mobile responsiveness, and performance.<br />
-    I’m easy to work with, open to feedback, and always meet deadlines. Let’s make your online presence stand out!`,
+    about_text: `<i class="fas fa-hand-paper hero-icon"></i> Hi! My name is <strong class="hero-name">\${name}</strong>. Frontend Developer with hands-on experience building responsive websites and single-page applications using HTML, CSS, JavaScript, React, and Redux. Worked on commercial and freelance projects, collaborated in Agile/Scrum teams, and participated in website development, deployment, and client-oriented delivery. Focused on creating user-friendly interfaces, solving problems effectively, and continuously improving technical skills.`,
     projects: `Projects <i class="fas fa-tools h-icon"></i>`,
     education: `Education <i class="fas fa-user-graduate h-icon"></i>`,
     contacts: `Contacts <i class="fas fa-paper-plane h-icon"></i>`,
@@ -15,9 +13,9 @@ export const translations = {
     mathod: "Methodologies:",
     sof: "Soft Skills:",
     soft: `<i class="fas fa-handshake about-icon"></i> Open communication: I easily build collaboration with clients and adapt to any workflow`,
-    soft1: `<i class="fas fa-user-check about-icon"></i> Client focus`,
+    soft1: `<i class="fas fa-user-check about-icon"></i> Time management`,
     soft2: `<i class="fas fa-balance-scale about-icon"></i> Accuracy and attention to detail`,
-    soft3: `<i class="fas fa-lightbulb about-icon"></i> Proactiveness: I suggest improvements to make the website better`,
+    soft3: `<i class="fas fa-lightbulb about-icon"></i> Critical thinking`,
     soft4: `<i class="fas fa-shield-alt about-icon"></i> Responsibility: I deliver what I commit and guarantee quality on time`,
     soft5: `<i class="fas fa-handshake about-icon"></i> Integrity in work`,
     btn: `<i class="fa-brands fa-github"></i> View Code`,
@@ -42,11 +40,10 @@ export const translations = {
     certificates: `My certification <i class="fas fa-award h-icon"></i>`,
     tbnc: "Download Certificate"
   },
+
   ua: {
     hero_name: "Євгенія Залевська",
-    about_text: `<i class="fas fa-hand-paper hero-icon"></i> Привіт! Мене звати <strong class="hero-name">\${name}</strong>. Я створюю сучасні та динамічні сайти, які чудово виглядають і працюють на будь-якому пристрої.<br />
-    Я допомагаю клієнтам втілювати ідеї у зручні, стильні та функціональні веб-рішення. Вам не потрібно турбуватись про технічні деталі — я беру на себе все: від макету до анімацій, адаптивності та оптимізації.<br />
-    Завжди відкрита до зворотного зв’язку, дотримуюсь дедлайнів і налаштована на якісний результат. Створімо ваш сайт, який справляє враження!`,
+    about_text: `<i class="fas fa-hand-paper hero-icon"></i> Привіт! Мене звати <strong class="hero-name">\${name}</strong>. Frontend Developer з практичним досвідом створення адаптивних вебсайтів і односторінкових застосунків із використанням HTML, CSS, JavaScript, React та Redux. Працювала над комерційними й фриланс-проєктами, співпрацювала в командах Agile/Scrum, брала участь у розробці сайтів, деплої та орієнтованій на клієнта реалізації проєктів. Зосереджена на створенні зручних для користувача інтерфейсів, ефективному розв’язанні проблем і постійному вдосконаленні технічних навичок.`,
     projects: `Проєкти <i class="fas fa-tools h-icon"></i>`,
     education: `Освіта <i class="fas fa-user-graduate h-icon"></i>`,
     contacts: `Контакти <i class="fas fa-paper-plane h-icon"></i>`,
@@ -58,9 +55,9 @@ export const translations = {
     mathod: "Методології:",
     sof: "Особисті якості:",
     soft: `<i class="fas fa-handshake about-icon"></i> Відкрита комунікація: легко налагоджую співпрацю з клієнтами та адаптуюсь до будь-якого робочого процесу`,
-    soft1: `<i class="fas fa-user-check about-icon"></i> Клієнтоорієнтованість`,
+    soft1: `<i class="fas fa-user-check about-icon"></i> Управління часом`,
     soft2: `<i class="fas fa-balance-scale about-icon"></i> Точність і увага до деталей`,
-    soft3: `<i class="fas fa-lightbulb about-icon"></i> Ініціативність: пропоную ідеї покращення сайту`,
+    soft3: `<i class="fas fa-lightbulb about-icon"></i> Критичне мислення`,
     soft4: `<i class="fas fa-shield-alt about-icon"></i> Відповідальність: виконую взяті зобов’язання та гарантую якість результату в потрібний час`,
     soft5: `<i class="fas fa-handshake about-icon"></i> Чесність у роботі`,
     btn: `<i class="fa-brands fa-github"></i> Переглянути код`,
