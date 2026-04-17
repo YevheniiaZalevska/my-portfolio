@@ -1,168 +1,259 @@
-.hero {
-    padding-top: 50px;
-    padding-bottom: 80px;
-    background: linear-gradient(to right, #1a1a2e, #0f3460);
-    color: #f0f0f0;
-}
+/* ---------------- HERO POSTER ---------------- */
 
-.hero-content {
-    max-width: 1000px;
-    padding: 0 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+.hero-poster-box {
     position: relative;
+    min-height: clamp(380px, 60vw, 620px);
+    margin: 0 auto;
+    padding: clamp(16px, 3cqi, 30px);
     overflow: hidden;
-    flex-direction: row;
+    isolation: isolate;
+    container-type: inline-size;
+    background: linear-gradient(135deg, #510a12 30%, #803434 50%, #230005 100%);
 }
 
-.hero-description {
-    flex: 1 1 60%;
-    gap: 1.5rem;
-    max-width: 600px;
+.hero-poster-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: 0;
 }
 
-.hero-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #6f00ff;
-    margin: 0;
-    margin-bottom: 5px;
-}
 
-.typewriter {
-    display: inline-block;
-    overflow: hidden;
-    border-right: 2px solid #6f00ff;
-    /* мигающий курсор */
+/* ---------------- PORTFOLIO ---------------- */
+
+.hero-bg-title {
+    position: absolute;
+    top: clamp(10px, 8cqb, 100px);
+    left: 8px;
+    z-index: 1;
+
+    font-size: clamp(10px, 11cqi, 130px);
+    line-height: 0.85;
+    font-weight: 800;
+    letter-spacing: -0.1em;
+    color: rgba(20, 1, 1, 0.788);
+
     white-space: nowrap;
-    letter-spacing: 2px;
-    animation: typing 3s steps(20, end), blink 0.7s infinite;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #6f00ff;
+    user-select: none;
+    pointer-events: none;
+
+    transform: scaleX(2.9);
+    transform-origin: left top;
+
+    text-shadow:
+        10px 8px 10px rgba(0, 0, 0, 0.18),
+        18px 16px 20px rgba(0, 0, 0, 0.12),
+        28px 24px 34px rgba(0, 0, 0, 0.08);
+
+    font-family: var(--font-editorial);
 }
 
-.about-me-text {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #cccccc;
-    text-align: justify;
-    margin-bottom: 30px;
-}
 
-.hero-icon {
-    display: inline-block;
-    animation: float 1s ease-in-out infinite;
-    margin-right: 0.5rem;
-    font-size: 1.2rem;
-    color: #6f00ff;
-}
+/* ---------------- UX UI WEB ---------------- */
 
-.hero-name {
-    font-weight: 600;
-    color: #6f00ff;
-    margin: 0;
-    font-size: larger;
-}
+.hero-left-tags {
+    position: absolute;
+    top: clamp(200px, 45cqb, 400px);
+    left: clamp(18%, 25%, 32%);
+    z-index: 4;
 
-.hero-btn-content {
-    margin-top: 1.5rem;
-}
-
-.hero-btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: #6f00ff;
-    color: #ffffff;
-    border-radius: 30px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.3s;
-    box-shadow: 0 0 10px rgba(111, 0, 255, 0.3);
-    animation: float 1s ease-in-out infinite;
-}
-
-.hero-btn:hover {
-    background-color: #5000cc;
-    transform: scale(1.05);
-}
-
-.hero-profile {
-    padding: 2rem;
     display: flex;
-    flex: 1 1 40%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.hero-left-tags span {
+    display: block;
+    font-size: clamp(32px, 7cqi, 75px);
+    line-height: 0.95;
+    font-weight: 900;
+    color: #f7c99b;
+    text-transform: uppercase;
+    font-family: var(--font-display);
+}
+
+.hero-left-tags::after {
+    content: "";
+    position: absolute;
+    left: clamp(-500px, -30cqi, -200px);
+    width: clamp(180px, 28cqi, 350px);
+    height: clamp(300px, 55cqb, 600px);
+    top: 150px;
+    background: url("/images/back1.png") center / contain no-repeat;
+    pointer-events: none;
+    opacity: 0.7;
+
+    filter:
+        drop-shadow(0 8px 16px rgba(0, 0, 0, 0.22)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.08));
+}
+
+
+/* ---------------- ФОТО ПО ЦЕНТРУ ---------------- */
+
+.hero-photo-layer {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+
+    display: flex;
+    align-items: flex-end;
     justify-content: center;
+
+    pointer-events: none;
 }
 
-.hero-img {
-    width: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #6f00ff;
+.hero-poster-img {
+    display: block;
+    width: auto;
+    height: clamp(500px, 105dvh, 900px);
+    max-height: 100%;
+    object-fit: contain;
 }
 
-@media (max-width: 1024px) {
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
+
+/* ---------------- FRONTEND - ПОПЕРЕДУ ---------------- */
+
+.hero-front-title {
+    position: absolute;
+    top: clamp(300px, 85cqb, 460px);
+    left: clamp(58%, 62%, 68%);
+    z-index: 3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 0.86;
+
+    transform: translateX(-6%);
+    pointer-events: none;
+}
+
+.hero-front-title span {
+    display: block;
+    font-size: clamp(40px, 8cqi, 85px);
+    font-weight: 900;
+    letter-spacing: -0.06em;
+    color: #f0dfc8;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-family: var(--font-display);
+}
+
+
+/* ---------------- ШРИФТИ ---------------- */
+
+.hero-poster-name {
+    font-family: var(--font-body);
+}
+
+.hero-poster-role,
+.hero-poster-btn {
+    font-family: var(--font-body);
+}
+
+
+/* ---------------- BREAKPOINTS ---------------- */
+
+@container (max-width: 960px) {
+    .hero-bg-title {
+        font-size: clamp(65px, 20cqi, 70px);
+        top: clamp(10px, 4cqb, 100px);
     }
 
-    .hero-description {
-        padding-right: 0;
+    .hero-left-tags span {
+        font-size: clamp(28px, 25cqi, 50px);
     }
 
-    .hero-profile {
-        padding: 2rem 0 0 0;
-        width: 100%;
+    .hero-left-tags {
+        left: clamp(14%, 20%, 28%);
+        top: clamp(140px, 5cqb, 200px);
     }
 
-    .hero-img {
-        margin-right: 0;
+    .hero-front-title span {
+        font-size: clamp(32px, 8cqi, 65px);
+    }
+
+    .hero-front-title {
+        top: clamp(220px, 62cqb, 380px);
+    }
+
+    .hero-left-tags::after {
+        left: clamp(-170px, -400cqi, -10px);
+        width: clamp(140px, 30cqi, 600px);
+        top: clamp(10px, 16cqb, 340px);
     }
 }
 
-@media (max-width: 768px) {
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
-        padding: 0 1.2rem;
+/* Планшет */
+@container (max-width: 768px) {
+    .hero-bg-title {
+        font-size: clamp(75px, 9cqi, 80px);
+        top: clamp(10px, 4cqb, 100px);
     }
 
-    .hero-description {
-        padding: 0;
-        width: 100%;
+    .hero-left-tags span {
+        font-size: clamp(28px, 25cqi, 50px);
     }
 
-    .hero-name {
-        font-size: 1.4rem;
-        margin-top: 1rem;
+    .hero-left-tags {
+        left: clamp(14%, 20%, 28%);
+        top: clamp(140px, 5cqb, 200px);
     }
 
-    .about-me-text {
-        font-size: 0.95rem;
-        line-height: 1.7;
-        text-align: left;
-        padding: 0.5rem;
+    .hero-front-title span {
+        font-size: clamp(32px, 8cqi, 65px);
     }
 
-    .hero-btn-content {
-        display: flex;
-        justify-content: center;
-        margin-top: 1.5rem;
+    .hero-front-title {
+        top: clamp(220px, 62cqb, 380px);
     }
 
-    .hero-btn {
-        font-size: 0.9rem;
-        padding: 0.6rem 1.2rem;
+    .hero-left-tags::after {
+        left: clamp(-170px, -400cqi, -10px);
+        width: clamp(140px, 30cqi, 600px);
+        top: clamp(10px, 16cqb, 340px);
     }
 }
 
-@media (max-width: 450px) {
-    .typewriter {
-        font-size: 1.6rem;
-        text-align: center;
-        white-space: normal;
+/* Мобільний */
+@container (max-width: 480px) {
+    .hero-poster-box {
+        min-height: clamp(320px, 90dvh, 500px);
+    }
+
+    .hero-bg-title {
+        font-size: clamp(28px, 8cqi, 56px);
+        top: clamp(16px, 6cqb, 40px);
+    }
+
+    .hero-left-tags {
+        top: clamp(100px, 30cqb, 200px);
+        left: clamp(10%, 18%, 24%);
+    }
+
+    .hero-left-tags span {
+        font-size: clamp(22px, 7cqi, 42px);
+    }
+
+    .hero-left-tags::after {
+        left: clamp(-160px, -20cqi, -100px);
+        width: clamp(100px, 20cqi, 200px);
+        opacity: 0.5;
+    }
+
+    .hero-front-title {
+        top: clamp(180px, 62cqb, 300px);
+        left: clamp(48%, 56%, 64%);
+    }
+
+    .hero-front-title span {
+        font-size: clamp(26px, 8cqi, 50px);
+    }
+
+    .hero-poster-img {
+        height: clamp(260px, 80dvh, 480px);
     }
 }
