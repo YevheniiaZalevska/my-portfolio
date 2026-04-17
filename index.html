@@ -12,20 +12,20 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script type="module" crossorigin src="/my-portfolio/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/my-portfolio/assets/index-DnZ30f1p.css">
+    <link rel="stylesheet" crossorigin href="/my-portfolio/assets/index-c3GqkCHa.css">
   </head>
   <body>
-    <header>
+    <header class="site-header">
   <div class="container header-content">
     <a href="index.html" class="header-logo-link">
       <div class="header-logo">
         <span class="header-logo-text" data-lang="logo">YZ</span>
         <img
           class="header-img"
-          src="/my-portfolio/assets/iam-DapS1Jae.jpg"
-          alt="my foto"
-          width="30"
-          height="30"
+          src="/my-portfolio/assets/iam-D0SIyjta.png"
+          alt="My photo"
+          width="42"
+          height="42"
         />
       </div>
     </a>
@@ -49,13 +49,20 @@
 
     <div class="header-right">
       <div class="header-lang">
-        <select id="languages">
+        <select id="languages" aria-label="Select language">
           <option value="en">EN</option>
           <option value="ua">UA</option>
         </select>
       </div>
 
-      <button class="burger-menu" id="burger-menu">
+      <button
+        class="burger-menu"
+        id="burger-menu"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+        type="button"
+      >
         <span></span>
         <span></span>
         <span></span>
@@ -66,40 +73,42 @@
 
 
     <main>
-      <section class="hero fade-in">
-  <div class="container hero-content">
-    <div class="hero-description">
-      <h1 class="hero-title typewriter" data-lang="title">
-        Frontend Developer
-      </h1>
-      <p class="about-me-text" data-lang="about_text">
-        <i class="fas fa-hand-paper hero-icon"></i> Hi, I’m
-        <strong class="hero-name" data-lang="hero_name"
-          >Yevheniia Zalevska</strong
-        >. Frontend Developer with hands-on experience building responsive
-        websites and single-page applications using HTML, CSS, JavaScript,
-        React, and Redux. Worked on commercial and freelance projects,
-        collaborated in Agile/Scrum teams, and participated in website
-        development, deployment, and client-oriented delivery. Focused on
-        creating user-friendly interfaces, solving problems effectively, and
-        continuously improving technical skills.
-      </p>
+      <section class="hero-poster fade-in">
+  <div class="container hero-poster-box">
+    <!-- заднее слово -->
+    <div class="hero-bg-title">Portfolio</div>
 
-      <div class="hero-btn-content">
-        <a
-          href="/YevheniiaZalevska-CV.pdf"
-          download
-          class="hero-btn"
-          data-lang="tbnh"
-        >
-          Download CV
-        </a>
-      </div>
+    <!-- левые теги -->
+    <div class="hero-left-tags">
+      <span>UX</span>
+      <span>UI</span>
+      <span>WEB</span>
     </div>
 
-    <div class="hero-profile">
-      <img class="hero-img" src="/my-portfolio/assets/iam-DapS1Jae.jpg" alt="my foto" width="250px" />
+    <!-- фото -->
+    <div class="hero-photo-layer">
+      <img
+        src="/my-portfolio/assets/iam-D0SIyjta.png"
+        alt="Yevheniia Zalevska"
+        class="hero-poster-img"
+      />
     </div>
+
+    <!-- передний заголовок -->
+    <div class="hero-front-title">
+      <span>FRONTEND</span>
+      <span>DEVELOPER</span>
+    </div>
+
+    <!-- нижний блок -->
+    <!-- <div class="hero-bottom-content">
+      <p class="hero-poster-name">Yevheniia Zalevska</p>
+      <p class="hero-poster-role">Frontend Developer</p>
+
+      <a href="/YevheniiaZalevska-CV.pdf" download class="hero-poster-btn">
+        Download CV
+      </a>
+    </div> -->
   </div>
 </section>
 
@@ -250,10 +259,10 @@
           </div>
         </div>
 
-        <div class="swiper-slide project-item">
+        <!-- <div class="swiper-slide project-item">
           <img
             class="project-img"
-            src="/my-portfolio/assets/project2-zzCTDy-E.png"
+            src="/images/project2.png"
             alt="GreenHarves"
             width="250"
             height="250"
@@ -285,7 +294,7 @@
               </button>
             </a>
           </div>
-        </div>
+        </div> -->
 
         <div class="swiper-slide project-item">
           <img
@@ -361,10 +370,10 @@
           </div>
         </div>
 
-        <div class="swiper-slide project-item">
+        <!-- <div class="swiper-slide project-item">
           <img
             class="project-img"
-            src="/my-portfolio/assets/project5-D_BveVAQ.png"
+            src="/images/project5.png"
             alt="WebStudio"
             width="250"
             height="250"
@@ -394,12 +403,12 @@
               </button>
             </a>
           </div>
-        </div>
+        </div> -->
 
-        <div class="swiper-slide project-item">
+        <!-- <div class="swiper-slide project-item">
           <img
             class="project-img"
-            src="/my-portfolio/assets/project6-DamSS22l.png"
+            src="/images/project6.png"
             alt="MemoryGame"
             width="250"
             height="250"
@@ -429,7 +438,7 @@
               </button>
             </a>
           </div>
-        </div>
+        </div> -->
 
         <div class="swiper-slide project-item">
           <img
@@ -465,10 +474,10 @@
           </div>
         </div>
 
-        <div class="swiper-slide project-item">
+        <!-- <div class="swiper-slide project-item">
           <img
             class="project-img"
-            src="/my-portfolio/assets/project8-WAapuB1P.png"
+            src="/images/project8.png"
             alt="FoodDeliveryService"
             width="250"
             height="250"
@@ -501,12 +510,12 @@
               </button>
             </a>
           </div>
-        </div>
+        </div> -->
 
-        <div class="swiper-slide project-item">
+        <!-- <div class="swiper-slide project-item">
           <img
             class="project-img"
-            src="/my-portfolio/assets/project9-DfUGq9pA.png"
+            src="/images/project9.png"
             alt="YachtJet"
             width="250"
             height="250"
@@ -539,7 +548,7 @@
               </button>
             </a>
           </div>
-        </div>
+        </div> -->
 
         <div class="swiper-slide project-item">
           <img
@@ -578,10 +587,10 @@
           </div>
         </div>
 
-        <div class="swiper-slide project-item">
+        <!-- <div class="swiper-slide project-item">
           <img
             class="project-img"
-            src="/my-portfolio/assets/project11-Fq5hZn4G.png"
+            src="/images/project11.png"
             alt="GreenHarves"
             width="250"
             height="250"
@@ -612,7 +621,7 @@
               </button>
             </a>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <!-- nav -->
