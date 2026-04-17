@@ -4,11 +4,12 @@
   | default @import url()
   |============================
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=League+Spartan:wght@600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap');
+
 /* Common styles */
 @import url('./base/reset.css');
 @import url('./base/base.css');
-@import url('./base/container.css');
-@import url('./base/common.css');
 @import url('./base/animation.css');
 
 /* Sections style */
