@@ -39,3 +39,20 @@ ScrollReveal().reveal('.cert-btn-content', {
   duration: 900,
   origin: 'bottom'
 });
+
+
+const box = document.querySelector('.hero-poster-box');
+
+for (let i = 0; i < 20; i++) {
+    const dot = document.createElement('span');
+    dot.classList.add('hero-dot');
+    dot.style.cssText = `
+        left: ${Math.random() * 100}%;
+        top: ${Math.random() * 100}%;
+        width: ${Math.random() * 4 + 2}px;
+        height: ${Math.random() * 4 + 2}px;
+        animation-delay: ${Math.random() * 3}s;
+        animation-duration: ${Math.random() * 2 + 2}s;
+    `;
+    box.appendChild(dot);
+}
