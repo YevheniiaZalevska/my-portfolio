@@ -1,64 +1,37 @@
-/* ---------------- HERO POSTER ---------------- */
-
 .hero-poster-box {
     position: relative;
-    min-height: clamp(380px, 60vw, 620px);
-    margin: 0 auto;
-    padding: clamp(16px, 3cqi, 30px);
+    aspect-ratio: 10.9 / 5;
+    width: 100%;
     overflow: hidden;
     isolation: isolate;
     container-type: inline-size;
-    background: linear-gradient(135deg, #510a12 30%, #803434 50%, #230005 100%);
+    background: linear-gradient(135deg, #510a12 30%, #803434 50%, #690f1d 100%);
 }
 
-.hero-poster-box::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    pointer-events: none;
-    z-index: 0;
-}
-
-
-/* ---------------- PORTFOLIO ---------------- */
-
+/* PORTFOLIO */
 .hero-bg-title {
     position: absolute;
-    top: clamp(10px, 8cqb, 100px);
-    left: 8px;
+    top: 3%;
+    left: 3%;
     z-index: 1;
-
-    font-size: clamp(10px, 11cqi, 130px);
+    font-size: 10cqi;
     line-height: 0.85;
     font-weight: 800;
     letter-spacing: -0.1em;
-    color: rgba(20, 1, 1, 0.788);
-
+    color: #280409;;
     white-space: nowrap;
     user-select: none;
-    pointer-events: none;
-
     transform: scaleX(2.9);
     transform-origin: left top;
-
-    text-shadow:
-        10px 8px 10px rgba(0, 0, 0, 0.18),
-        18px 16px 20px rgba(0, 0, 0, 0.12),
-        28px 24px 34px rgba(0, 0, 0, 0.08);
-
     font-family: var(--font-editorial);
 }
 
-
-/* ---------------- UX UI WEB ---------------- */
-
+/* UX UI WEB */
 .hero-left-tags {
     position: absolute;
-    top: clamp(200px, 45cqb, 400px);
-    left: clamp(18%, 25%, 32%);
+    top: 40%;
+    left: 19%;
     z-index: 4;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,7 +40,7 @@
 
 .hero-left-tags span {
     display: block;
-    font-size: clamp(32px, 7cqi, 75px);
+    font-size: 7cqi;
     line-height: 0.95;
     font-weight: 900;
     color: #f7c99b;
@@ -75,65 +48,39 @@
     font-family: var(--font-display);
 }
 
-.hero-left-tags::after {
-    content: "";
-    position: absolute;
-    left: clamp(-500px, -30cqi, -200px);
-    width: clamp(180px, 28cqi, 350px);
-    height: clamp(300px, 55cqb, 600px);
-    top: 150px;
-    background: url("/images/back1.png") center / contain no-repeat;
-    pointer-events: none;
-    opacity: 0.7;
-
-    filter:
-        drop-shadow(0 8px 16px rgba(0, 0, 0, 0.22)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.08));
-}
-
-
-/* ---------------- ФОТО ПО ЦЕНТРУ ---------------- */
-
+/* Фото */
 .hero-photo-layer {
     position: absolute;
     inset: 0;
     z-index: 2;
-
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-
     pointer-events: none;
 }
 
 .hero-poster-img {
-    display: block;
-    width: auto;
-    height: clamp(500px, 105dvh, 900px);
-    max-height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    width: 35cqi;
+    height: auto;
     object-fit: contain;
+    /* filter: drop-shadow(0 0 20px rgba(240, 181, 133, 0.5)) drop-shadow(0 0 60px rgba(239, 149, 119, 0.3)); */
 }
 
-
-/* ---------------- FRONTEND - ПОПЕРЕДУ ---------------- */
-
+/* FRONTEND */
 .hero-front-title {
     position: absolute;
-    top: clamp(300px, 85cqb, 460px);
-    left: clamp(58%, 62%, 68%);
+    top: 70%;
+    left: 60%;
     z-index: 3;
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     line-height: 0.86;
-
-    transform: translateX(-6%);
     pointer-events: none;
 }
 
 .hero-front-title span {
-    display: block;
-    font-size: clamp(40px, 8cqi, 85px);
+    font-size: 8cqi;
     font-weight: 900;
     letter-spacing: -0.06em;
     color: #f0dfc8;
@@ -142,118 +89,12 @@
     font-family: var(--font-display);
 }
 
-
-/* ---------------- ШРИФТИ ---------------- */
-
-.hero-poster-name {
-    font-family: var(--font-body);
-}
-
-.hero-poster-role,
-.hero-poster-btn {
-    font-family: var(--font-body);
-}
-
-
-/* ---------------- BREAKPOINTS ---------------- */
-
-@container (max-width: 960px) {
-    .hero-bg-title {
-        font-size: clamp(65px, 20cqi, 70px);
-        top: clamp(10px, 4cqb, 100px);
-    }
-
-    .hero-left-tags span {
-        font-size: clamp(28px, 25cqi, 50px);
-    }
-
-    .hero-left-tags {
-        left: clamp(14%, 20%, 28%);
-        top: clamp(140px, 5cqb, 200px);
-    }
-
-    .hero-front-title span {
-        font-size: clamp(32px, 8cqi, 65px);
-    }
-
-    .hero-front-title {
-        top: clamp(220px, 62cqb, 380px);
-    }
-
-    .hero-left-tags::after {
-        left: clamp(-170px, -400cqi, -10px);
-        width: clamp(140px, 30cqi, 600px);
-        top: clamp(10px, 16cqb, 340px);
-    }
-}
-
-/* Планшет */
-@container (max-width: 768px) {
-    .hero-bg-title {
-        font-size: clamp(75px, 9cqi, 80px);
-        top: clamp(10px, 4cqb, 100px);
-    }
-
-    .hero-left-tags span {
-        font-size: clamp(28px, 25cqi, 50px);
-    }
-
-    .hero-left-tags {
-        left: clamp(14%, 20%, 28%);
-        top: clamp(140px, 5cqb, 200px);
-    }
-
-    .hero-front-title span {
-        font-size: clamp(32px, 8cqi, 65px);
-    }
-
-    .hero-front-title {
-        top: clamp(220px, 62cqb, 380px);
-    }
-
-    .hero-left-tags::after {
-        left: clamp(-170px, -400cqi, -10px);
-        width: clamp(140px, 30cqi, 600px);
-        top: clamp(10px, 16cqb, 340px);
-    }
-}
-
-/* Мобільний */
-@container (max-width: 480px) {
-    .hero-poster-box {
-        min-height: clamp(320px, 90dvh, 500px);
-    }
-
-    .hero-bg-title {
-        font-size: clamp(28px, 8cqi, 56px);
-        top: clamp(16px, 6cqb, 40px);
-    }
-
-    .hero-left-tags {
-        top: clamp(100px, 30cqb, 200px);
-        left: clamp(10%, 18%, 24%);
-    }
-
-    .hero-left-tags span {
-        font-size: clamp(22px, 7cqi, 42px);
-    }
-
-    .hero-left-tags::after {
-        left: clamp(-160px, -20cqi, -100px);
-        width: clamp(100px, 20cqi, 200px);
-        opacity: 0.5;
-    }
-
-    .hero-front-title {
-        top: clamp(180px, 62cqb, 300px);
-        left: clamp(48%, 56%, 64%);
-    }
-
-    .hero-front-title span {
-        font-size: clamp(26px, 8cqi, 50px);
-    }
-
-    .hero-poster-img {
-        height: clamp(260px, 80dvh, 480px);
-    }
+.hero-dot {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(240, 181, 133, 0.7);
+    filter: blur(1px);
+    z-index: 1;
+    pointer-events: none;
+    animation: dotPulse ease-in-out infinite alternate;
 }
