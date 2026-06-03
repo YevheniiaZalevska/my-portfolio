@@ -1,6 +1,6 @@
 #certificates {
     padding: 100px 0;
-    background: linear-gradient(to right, #1a1a2e, #0f3460);
+    background-color: #34070e;
     color: #f0f0f0;
     position: relative;
     overflow: hidden;
@@ -16,19 +16,9 @@
 .cert-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #6f00ff;
+    color: #f7c99b;
     margin-bottom: 2rem;
     position: relative;
-}
-
-.cert-title::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #6f00ff;
-    margin: 0.5rem auto 0;
-    border-radius: 2px;
 }
 
 .cert-btn-content {
@@ -42,34 +32,33 @@
 }
 
 .cert-btn {
-    background-color: #6f00ff;
-    color: #ffffff;
-    text-decoration: none;
+    border: none;
     border-radius: 25px;
-    padding: 0.75rem 1.5rem;
+    padding: 0.6rem 1.2rem;
     font-weight: 600;
-    font-size: 1rem;
-    box-shadow: 0 0 10px rgba(111, 0, 255, 0.3);
+    font-size: 0.9rem;
+    cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    animation: float 1s ease-in-out infinite;
+    background-color: #f7e7d7;
+    color: #34070e;
 }
 
 .cert-btn:hover {
-    background-color: #5000cc;
-    transform: scale(1.05);
+    background-color: #f7c99b;
+    transform: translateY(-2px);
 }
 
-/* .project-img {
-    width: 250px;
-    border-radius: 10px;
-    object-fit: cover;
-    border: 2px solid #6f00ff;
-    transition: transform 0.3s ease;
+.cert-btn i {
+    font-size: 16px;
 }
 
-.project-img:hover {
-    transform: scale(1.05);
-} */
+.cert-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-end;
+}
 
 @media (max-width: 768px) {
     .cert-btn-content {
