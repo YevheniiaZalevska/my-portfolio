@@ -1,12 +1,12 @@
 //  About Me
-ScrollReveal().reveal('.list2', {
-  delay: 400,
-  distance: '40px',
-  duration: 1000,
-  origin: 'right'
-});
+// ScrollReveal().reveal('.list2', {
+//   delay: 400,
+//   distance: '40px',
+//   duration: 1000,
+//   origin: 'right'
+// });
 
-ScrollReveal().reveal('.about-tech-content', {
+ScrollReveal().reveal('.about-me-text', {
   delay: 300,
   distance: '40px',
   duration: 900,
