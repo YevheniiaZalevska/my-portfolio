@@ -1,6 +1,5 @@
-
 #contacts {
-    background: #0f3460;
+    background: linear-gradient(135deg, #510a12 30%, #803434 50%, #690f1d 100%);
     color: #f0f0f0;
     padding: 60px 0;
     font-size: 1rem;
@@ -19,19 +18,9 @@
 .footer-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #6f00ff;
+    color: #f7c99b;
     position: relative;
     text-align: center;
-}
-
-.footer-title::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #6f00ff;
-    margin: 0.5rem auto 0;
-    border-radius: 2px;
 }
 
 .footer-dectop {
@@ -50,12 +39,12 @@
 
 .footer-soc-item a {
     font-size: 1.5rem;
-    color: #f0f0f0;
+    color: #f0dfc8;
     transition: color 0.3s, transform 0.3s;
 }
 
 .footer-soc-item a:hover {
-    color: #6f00ff;
+    color: #f7c99b;
     transform: scale(1.2);
 }
 
@@ -69,13 +58,13 @@
 }
 
 .footer-address-item a {
-    color: #cccccc;
+    color: #f0dfc8;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer-address-item a:hover {
-    color: #6f00ff;
+    color: #f7c99b;
 }
 
 @media (max-width: 768px) {
