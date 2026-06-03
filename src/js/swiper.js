@@ -61,7 +61,6 @@ const swiper = new Swiper('.swiper-container', {
 });
 
 
-// При касании пальцем ставим autoplay на паузу (мобильные устройства)
 swiper.el.addEventListener('touchstart', () => {
   swiper.autoplay.stop();
 });
