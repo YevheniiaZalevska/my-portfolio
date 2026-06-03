@@ -1,0 +1,110 @@
+.about-me {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #510a12 30%, #803434 50%, #690f1d 100%);
+}
+
+.about-me-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* .about-me-title {
+    margin-bottom: 28px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #f5dfcf;
+} */
+
+.about-me-text {
+    max-width: 820px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #f5dfcf;
+    text-align: center;
+}
+
+.hero-name {
+    font-weight: 700;
+    color: #f7c99b;
+}
+
+/* .hero-icon {
+    margin-right: 8px;
+    font-size: 20px;
+    color: #222222;
+} */
+
+@media screen and (max-width: 768px) {
+    .about-me {
+        padding: 60px 0;
+    }
+
+    .about-me-title {
+        font-size: 30px;
+        margin-bottom: 22px;
+    }
+
+    .about-me-text {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+}
+
+.about-me-cv-btn {
+    border: none;
+    border-radius: 25px;
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: #f7e7d7;
+    color: #34070e;
+}
+
+.about-me-cv-btn:hover {
+    background-color: #444444;
+    transform: translateY(-2px);
+}
+
+.about-me-cv-btn i {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 480px) {
+    .about-me-cv-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 13px 20px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-me {
+        padding: 45px 0;
+    }
+
+    .about-me-container {
+        padding: 0 16px;
+    }
+
+    .about-me-title {
+        font-size: 26px;
+    }
+
+    .about-me-text {
+        font-size: 15px;
+    }
+
+    .hero-icon {
+        font-size: 18px;
+    }
+}
