@@ -16,7 +16,7 @@
     }
 
     to {
-        width: 100%;
+        width: 9ch;
     }
 }
 
@@ -26,7 +26,7 @@
     }
 }
 
-@keyframes float {
+/* @keyframes float {
     0% {
         transform: translateY(0px) rotate(0deg);
     }
@@ -38,7 +38,7 @@
     100% {
         transform: translateY(0px) rotate(0deg);
     }
-}
+} */
 
 @keyframes dotPulse {
     from {
