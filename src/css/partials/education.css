@@ -1,9 +1,9 @@
 #education {
-    background: linear-gradient(to right, #0f3460, #1a1a2e);
-    color: #f0f0f0;
+    background: linear-gradient(135deg, #510a12 30%, #803434 50%, #690f1d 100%);
+    color: #f7e7d7;
     position: relative;
     overflow: hidden;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .education-container {
@@ -18,20 +18,10 @@
 .education-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #6f00ff;
+    color: #f7c99b;
     margin-bottom: 2rem;
     position: relative;
     text-align: center;
-}
-
-.education-title::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #6f00ff;
-    border-radius: 2px;
-    margin: 0.4rem auto 0;
 }
 
 .education-list {
@@ -47,7 +37,6 @@
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
     padding: 1rem 1.5rem;
-    box-shadow: 0 0 20px rgba(111, 0, 255, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     display: flex;
@@ -57,19 +46,14 @@
     text-align: center;
 }
 
-.education-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 0 25px rgba(111, 0, 255, 0.2);
-}
-
 .edu-school {
     font-weight: 700;
-    color: #c77dff;
+    color: #f7c99b;
 }
 
 .edu-role {
     font-style: italic;
-    color: #f0f0f0;
+    color: #f7e7d7;
 }
 
 .edu-dates {

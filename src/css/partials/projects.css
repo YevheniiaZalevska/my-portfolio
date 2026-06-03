@@ -1,5 +1,5 @@
 #projects {
-    padding: 100px 0;
+    padding: 50px 0;
     background-color: #34070e;
     position: relative;
     overflow: hidden;
@@ -46,7 +46,9 @@
     object-fit: cover;
     transition: transform 0.3s ease;
     margin: 0 auto 1rem;
-    border-color: #f7c99b;
+    border-color: #f7e7d7;
+    border-width: 2px;
+    border-style: solid;
 }
 
 .project-img:hover {
@@ -91,8 +93,8 @@
 }
 
 .project-btn {
-    /* background-color: #6f00ff; */
-    color: #f7e7d7;
+    background-color: #f7e7d7;
+    color: #34070e;
     border: none;
     border-radius: 25px;
     padding: 0.6rem 1.2rem;
