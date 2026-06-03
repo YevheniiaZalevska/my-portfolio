@@ -9,7 +9,7 @@
 }
 
 /* PORTFOLIO */
-.hero-bg-title {
+/* .hero-bg-title {
     position: absolute;
     top: 3%;
     left: 3%;
@@ -24,6 +24,28 @@
     transform: scaleX(2.9);
     transform-origin: left top;
     font-family: var(--font-editorial);
+    animation: typing 2s steps(9) forwards;
+} */
+
+.hero-bg-title {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    z-index: 1;
+    font-size: 10cqi;
+    line-height: 0.85;
+    font-weight: 800;
+    letter-spacing: -0.1em;
+    color: #280409;
+    white-space: nowrap;
+    user-select: none;
+    transform: scaleX(2.9);
+    transform-origin: left top;
+    font-family: var(--font-editorial);
+
+    overflow: hidden;
+    display: inline-block;
+    animation: typing 3s steps(9) forwards;
 }
 
 /* UX UI WEB */
