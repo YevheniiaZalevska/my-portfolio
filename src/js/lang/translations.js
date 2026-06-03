@@ -24,10 +24,10 @@ export const translations = {
     educ_col: `<span class="edu-school">IT School GoIT</span> — <span class="edu-role">Frontend Developer Course, Certificate Program</span><br /><span class="edu-dates">2023 – 2025</span>`,
     lang: `Languages`,
     lang_ua: "Ukrainian - Native",
-    lang_en: "English - Intermediate",
+    lang_en: "English - Upper Intermediate ",
     lang_pl: "Polish - Intermediate",
     certificates: `My certifications`,
-    tbnc: "Download Certificate"
+    tbnc: `<i class="fas fa-download"></i> Download certificate`,
   },
 
   ua: {
@@ -55,9 +55,9 @@ export const translations = {
     educ_col: `<span class="edu-school">IT School GoIT</span> — <span class="edu-role">Курс Frontend Developer, Сертифікатна програма</span><br /><span class="edu-dates">2023 – 2025</span>`,
     lang: `Мови`,
     lang_ua: "Українська — рідна",
-    lang_en: "Англійська — В1",
+    lang_en: "Англійська — В2",
     lang_pl: "Польська — В1",
     certificates: `Мої сертифікати`,
-    tbnc: "Завантажити сертифікат",
+    tbnc: `<i class="fas fa-download"></i> Завантажити сертифікат`,
   }
 };
