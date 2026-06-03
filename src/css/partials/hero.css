@@ -120,3 +120,87 @@
     pointer-events: none;
     animation: dotPulse ease-in-out infinite alternate;
 }
+
+@media (max-width: 768px) {
+    .hero-poster-box {
+        aspect-ratio: 4 / 3;
+    }
+
+    .hero-bg-title {
+        font-size: 15.7cqi;
+        transform: scaleX(1.8);
+    }
+
+    .hero-poster-img {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60cqi;
+    }
+
+    .hero-left-tags {
+        top: auto;
+        bottom: 30%;
+        left: 15%;
+    }
+
+    .hero-left-tags span {
+        font-size: 9cqi;
+    }
+
+    .hero-front-title {
+        top: auto;
+        bottom: 3%;
+        left: 50%;
+    }
+
+    .hero-front-title span {
+        font-size: 10cqi;
+    }
+
+    .hero-poster-img {
+        width: 55cqi;
+    }
+}
+
+/* ===== МОБИЛЬНЫЙ ===== */
+/* @media (max-width: 480px) {
+    .hero-poster-box {
+        aspect-ratio: 9 / 16;
+    }
+
+    .hero-bg-title {
+        font-size: 16cqi;
+        transform: scaleX(1.4);
+        top: 2%;
+    }
+
+    .hero-poster-img {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80cqi;
+        bottom: 25%;
+    }
+
+    .hero-left-tags {
+        top: auto;
+        bottom: 18%;
+        left: 5%;
+        align-items: flex-start;
+    }
+
+    .hero-left-tags span {
+        font-size: 11cqi;
+    }
+
+    .hero-front-title {
+        bottom: 3%;
+        left: auto;
+        right: 3%;
+        align-items: flex-end;
+    }
+
+    .hero-front-title span {
+        font-size: 12cqi;
+        text-align: right;
+    }
+} */

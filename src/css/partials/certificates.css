@@ -1,5 +1,5 @@
 #certificates {
-    padding: 100px 0;
+    padding: 50px 0;
     background-color: #34070e;
     color: #f0f0f0;
     position: relative;
@@ -62,7 +62,7 @@
 
 @media (max-width: 768px) {
     .cert-btn-content {
-        padding: 1.5rem;
+        padding: 20;
     }
 
     .cert-btn {
@@ -72,5 +72,10 @@
 
     .project-img {
         width: 160px;
+    }
+
+    .cert-btn-content {
+        gap: 1rem;
+        padding: 1rem;
     }
 }

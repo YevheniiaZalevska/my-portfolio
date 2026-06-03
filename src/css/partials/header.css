@@ -208,6 +208,10 @@
     .nav-menu {
         display: flex !important;
     }
+    
+    .site-header {
+        padding: 8px 8px 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -289,7 +293,7 @@
 
 @media (max-width: 520px) {
     .site-header {
-        padding: 14px 10px 0;
+        padding: 8px 8px 0;
     }
 
     .container.header-content {
