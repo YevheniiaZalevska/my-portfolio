@@ -99,10 +99,6 @@
     align-items: flex-start;
     line-height: 0.86;
     pointer-events: none;
-
-    overflow: hidden;
-    display: inline-block;
-    animation: typing 2s steps(17) forwards;
 }
 
 .hero-front-title span {
@@ -113,16 +109,14 @@
     text-transform: uppercase;
     white-space: nowrap;
     font-family: var(--font-display);
+
+    overflow: hidden;
+    width: 0;
+    animation: typing 0.6s steps(8) forwards;
 }
 
-.hero-dot {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(240, 181, 133, 0.7);
-    filter: blur(1px);
-    z-index: 1;
-    pointer-events: none;
-    animation: dotPulse ease-in-out infinite alternate;
+.hero-front-title span:nth-child(2) {
+    animation-delay: 0.65s;
 }
 
 @media (max-width: 768px) {
