@@ -122,6 +122,15 @@
     color: #f7e7d7;
 }
 
+.swiper-pagination-bullet-active {
+    background: #f7e7d7 !important;
+}
+
+.swiper-pagination-bullet {
+    background: rgba(247, 231, 215, 0.4) !important;
+    opacity: 1 !important;
+}
+
 @media (max-width: 768px) {
     .project-item {
         padding: 1.5rem;
