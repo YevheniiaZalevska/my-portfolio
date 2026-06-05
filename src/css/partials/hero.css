@@ -7,6 +7,28 @@
     container-type: inline-size;
     background: linear-gradient(135deg, #510a12 30%, #803434 50%, #690f1d 100%);
 }
+
+.hero-dot {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(240, 181, 133, 0.7);
+    filter: blur(1px);
+    z-index: 1;
+    pointer-events: none;
+    animation: dotPulse ease-in-out infinite alternate;
+}
+
+@keyframes dotPulse {
+    from {
+        opacity: 0.2;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1.4);
+    }
+}
  
 /* PORTFOLIO */
 /* .hero-bg-title {
