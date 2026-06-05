@@ -43,9 +43,9 @@
     transform-origin: left top;
     font-family: var(--font-editorial);
 
-    overflow: hidden;
+    /* overflow: hidden;
     display: inline-block;
-    animation: typing 3s steps(9) forwards;
+    animation: typing 3s steps(9) forwards; */
 }
 
 /* UX UI WEB */
@@ -99,6 +99,10 @@
     align-items: flex-start;
     line-height: 0.86;
     pointer-events: none;
+
+    overflow: hidden;
+    display: inline-block;
+    animation: typing 2s steps(17) forwards;
 }
 
 .hero-front-title span {
