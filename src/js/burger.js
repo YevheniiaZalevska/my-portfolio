@@ -25,9 +25,4 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-burgerMenu.addEventListener('click', () => {
-  burgerMenu.classList.toggle('active');
-  navMenu.classList.toggle('active');
-  body.classList.toggle('no-scroll');
-});
 
