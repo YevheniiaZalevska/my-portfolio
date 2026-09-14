@@ -29,6 +29,7 @@ export const translations = {
     lang_pl: "Polish - Intermediate",
     certificates: `My certifications`,
     tbnc: `<i class="fas fa-download"></i> Download certificate`,
+    wv: `Web Vitals`
   },
 
   ua: {
@@ -61,5 +62,6 @@ export const translations = {
     lang_pl: "Польська — В1",
     certificates: `Мої сертифікати`,
     tbnc: `<i class="fas fa-download"></i> Завантажити сертифікат`,
+    wv: `Веб-показники`
   }
 };
