@@ -4,3 +4,7 @@
     position: relative;
     overflow: hidden;
 }
+
+.vp {
+    min-width: 350px;
+}
