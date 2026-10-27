@@ -19,16 +19,22 @@
 
 .project-container {
     position: relative;
-    max-width: 1360px;
+    max-width: 1240px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 24px;
-    align-items: start;
+.project-slider {
+    overflow: hidden;
+    padding: 12px 4px 8px;
+}
+
+.project-slider .swiper-wrapper {
+    align-items: flex-start;
+}
+
+.project-slider .swiper-slide {
+    height: auto;
 }
 
 /* ------------------------------ КАРТКА ------------------------------ */
@@ -80,14 +86,6 @@
     aspect-ratio: 4 / 3;
     overflow: hidden;
     background: var(--c-bg-deep);
-}
-
-.project-media::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(35, 4, 9, 0.85), transparent 55%);
-    pointer-events: none;
 }
 
 .project-img {
@@ -240,10 +238,61 @@
 }
 
 
-@media (max-width: 1199px) {
-    .project-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+/* ------------------------------ НАВІГАЦІЯ СЛАЙДЕРА ------------------------------ */
+
+.slider-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+
+.slider-btn {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(247, 231, 215, 0.25);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--c-cream);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s var(--ease-out), opacity 0.3s ease;
+}
+
+.slider-btn:hover {
+    background: var(--c-accent);
+    border-color: var(--c-accent);
+    color: var(--c-bg);
+    transform: scale(1.08);
+}
+
+.slider-btn.swiper-button-disabled {
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+.slider-controls .swiper-pagination {
+    position: static;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.slider-controls .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    margin: 0 !important;
+    background: rgba(247, 231, 215, 0.35);
+    opacity: 1;
+    transition: width 0.35s var(--ease-out), background-color 0.3s ease;
+}
+
+.slider-controls .swiper-pagination-bullet-active {
+    width: 28px;
+    border-radius: 999px;
+    background: var(--c-accent);
 }
 
 @media (max-width: 768px) {
@@ -253,11 +302,6 @@
 
     .project-container {
         padding: 0 1rem;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
     }
 
     .project-body {
