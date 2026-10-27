@@ -41,55 +41,12 @@
     color: #f7c99b;
 }
 
-/* ------------------------------ ЛІЧИЛЬНИКИ ------------------------------ */
-
-.stats {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    width: 100%;
-    margin-top: 3rem;
-}
-
-.stat {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.35rem;
-    padding: 1.6rem 1rem;
-    border-radius: var(--radius);
-    background: rgba(35, 4, 9, 0.35);
-    border: 1px solid var(--c-line);
-    transition: transform 0.4s var(--ease-out), background-color 0.3s ease, border-color 0.3s ease;
-}
-
-.stat:hover {
-    transform: translateY(-6px);
-    background: rgba(35, 4, 9, 0.55);
-    border-color: rgba(247, 201, 155, 0.35);
-}
-
-.stat-value {
-    font-family: var(--font-display);
-    font-size: clamp(2.4rem, 6vw, 3.6rem);
-    font-weight: 800;
-    line-height: 1;
-    color: var(--c-accent);
-    font-variant-numeric: tabular-nums;
-}
-
-.stat-label {
-    font-size: 0.9rem;
-    color: var(--c-muted);
-    text-align: center;
-}
-
 /* ------------------------------ БІГУЧИЙ РЯДОК НАВИЧОК ------------------------------ */
 
 .skills {
     position: relative;
     display: flex;
-    margin-top: 4rem;
+    margin-top: 3.5rem;
     padding: 1.2rem 0;
     overflow: hidden;
     background: rgba(35, 4, 9, 0.55);
@@ -135,18 +92,6 @@
     .about-me-text {
         font-size: 16px;
         line-height: 1.7;
-    }
-
-    .stats {
-        gap: 0.6rem;
-    }
-
-    .stat {
-        padding: 1.1rem 0.5rem;
-    }
-
-    .stat-label {
-        font-size: 0.78rem;
     }
 
     .skills {

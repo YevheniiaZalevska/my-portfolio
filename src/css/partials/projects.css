@@ -104,19 +104,6 @@
     transform: scale(1.07);
 }
 
-.project-num {
-    position: absolute;
-    right: 14px;
-    bottom: 6px;
-    z-index: 1;
-    font-family: var(--font-display);
-    font-size: 3rem;
-    font-weight: 900;
-    line-height: 1;
-    color: transparent;
-    -webkit-text-stroke: 1px rgba(247, 231, 215, 0.6);
-}
-
 .project-body {
     display: flex;
     flex: 1;

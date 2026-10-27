@@ -100,19 +100,6 @@ body.no-scroll {
   animation: shine 6s linear infinite;
 }
 
-.section-eyebrow {
-  font-family: var(--font-editorial);
-  font-size: 0.45em;
-  font-style: italic;
-  font-weight: 700;
-  color: var(--c-accent);
-  opacity: 0.7;
-}
-
-.section-title-sm {
-  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
-  margin-bottom: 1.75rem;
-}
 
 /* ------------------------------ КНОПКИ ------------------------------ */
 

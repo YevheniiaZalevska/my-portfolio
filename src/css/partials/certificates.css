@@ -33,17 +33,16 @@
     position: relative;
     display: block;
     padding: 0;
-    border: 1px solid var(--c-line);
-    border-radius: var(--radius);
-    background: var(--c-surface);
+    border: none;
+    border-radius: 10px;
+    background: none;
     overflow: hidden;
     cursor: zoom-in;
-    transition: transform 0.4s var(--ease-out), border-color 0.3s ease, box-shadow 0.4s ease;
+    transition: transform 0.4s var(--ease-out), box-shadow 0.4s ease;
 }
 
 .cert-card:hover {
     transform: translateY(-6px) rotate(-0.6deg);
-    border-color: rgba(247, 201, 155, 0.45);
     box-shadow: 0 24px 50px -18px rgba(0, 0, 0, 0.6);
 }
 

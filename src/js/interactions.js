@@ -139,26 +139,6 @@ document.querySelectorAll('.project-more').forEach(btn => {
   });
 });
 
-/* ---------- Лічильники ---------- */
-
-function animateCount(el) {
-  const target = Number(el.dataset.count);
-  if (reduceMotion) {
-    el.textContent = target;
-    return;
-  }
-  const duration = 1400;
-  const start = performance.now();
-
-  function frame(now) {
-    const p = Math.min((now - start) / duration, 1);
-    const eased = 1 - Math.pow(1 - p, 3);
-    el.textContent = Math.round(target * eased);
-    if (p < 1) requestAnimationFrame(frame);
-  }
-  requestAnimationFrame(frame);
-}
-
 /* ---------- Поява елементів при прокрутці ---------- */
 
 const visibilityObserver = new IntersectionObserver(
@@ -166,7 +146,6 @@ const visibilityObserver = new IntersectionObserver(
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
       const el = entry.target;
-      if (el.dataset.count) animateCount(el);
       el.classList.add('is-visible');
       visibilityObserver.unobserve(el);
     });
@@ -175,7 +154,7 @@ const visibilityObserver = new IntersectionObserver(
 );
 
 document
-  .querySelectorAll('[data-count], .lang-item, .timeline')
+  .querySelectorAll('.lang-item, .timeline')
   .forEach(el => visibilityObserver.observe(el));
 
 /* ---------- Лайтбокс для зображень ---------- */

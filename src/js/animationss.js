@@ -12,7 +12,6 @@ if (!reduceMotion) {
 
   sr.reveal('.section-title', { origin: 'bottom', distance: '24px' });
   sr.reveal('.about-me-text', { delay: 150, origin: 'left' });
-  sr.reveal('.stat', { delay: 200, origin: 'bottom', interval: 150 });
   sr.reveal('.timeline-item', { delay: 200, origin: 'left', interval: 200 });
   sr.reveal('.lang-item', { delay: 200, origin: 'right', interval: 150 });
   sr.reveal('.cert-btn-content, #statistics .cert-card', {
@@ -20,7 +19,7 @@ if (!reduceMotion) {
     origin: 'bottom',
     interval: 150,
   });
-  sr.reveal('.footer-cta, .footer-dectop', { delay: 150, origin: 'bottom', interval: 150 });
+  sr.reveal('.footer-dectop', { delay: 150, origin: 'bottom', interval: 150 });
 }
 
 const box = document.querySelector('.hero-poster-box');
