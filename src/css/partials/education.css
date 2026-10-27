@@ -95,6 +95,11 @@
     color: var(--c-muted);
 }
 
+.edu-label {
+    font-weight: 700;
+    color: var(--c-accent);
+}
+
 .edu-dates {
     display: inline-block;
     margin-top: 0.5rem;

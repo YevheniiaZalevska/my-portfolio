@@ -129,6 +129,21 @@ if (finePointer && !reduceMotion) {
   });
 }
 
+/* ---------- Відео проєкту: грає лише у полі зору ---------- */
+
+document.querySelectorAll('.project-video').forEach(video => {
+  if (reduceMotion) {
+    video.removeAttribute('autoplay');
+    video.pause();
+    return;
+  }
+
+  new IntersectionObserver(([entry]) => {
+    if (entry.isIntersecting) video.play().catch(() => {});
+    else video.pause();
+  }).observe(video);
+});
+
 /* ---------- Розгортання опису проєкту ---------- */
 
 document.querySelectorAll('.project-more').forEach(btn => {

@@ -101,52 +101,6 @@ body.no-scroll {
 }
 
 
-/* ------------------------------ КНОПКИ ------------------------------ */
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.85rem 1.5rem;
-  border-radius: 999px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease,
-    box-shadow 0.3s ease,
-    translate 0.25s var(--ease-out);
-}
-
-.btn i {
-  font-size: 0.85em;
-  transition: transform 0.3s var(--ease-out);
-}
-
-.btn:hover i {
-  transform: translateY(2px);
-}
-
-.btn-primary {
-  background: var(--c-accent);
-  color: var(--c-bg);
-  box-shadow: 0 10px 30px -10px rgba(247, 201, 155, 0.6);
-}
-
-.btn-primary:hover {
-  background: var(--c-cream);
-  box-shadow: 0 14px 36px -8px rgba(247, 201, 155, 0.75);
-}
-
-.btn-ghost {
-  color: var(--c-cream);
-  box-shadow: inset 0 0 0 1px rgba(247, 231, 215, 0.3);
-}
-
-.btn-ghost:hover {
-  background: var(--c-surface-hover);
-  box-shadow: inset 0 0 0 1px rgba(247, 231, 215, 0.6);
-}
 
 /* ------------------------------ ПРОГРЕС ПРОКРУТКИ ------------------------------ */
 

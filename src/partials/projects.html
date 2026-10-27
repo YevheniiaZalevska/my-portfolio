@@ -4,213 +4,89 @@
       <span data-lang="projects_title">My projects</span>
     </h2>
 
-    <div class="swiper swiper-container">
-      <div class="swiper-wrapper">
-        <article class="swiper-slide project-item tilt">
-          <div class="project-media">
-            <img
-              class="project-img"
-              src="/images/project12.png"
-              alt="Yavoryna"
-              width="250"
-              height="250"
-            />
+    <div class="project-grid">
+      <article class="project-item tilt">
+        <div class="project-media">
+          <video
+            class="project-img project-video"
+            src="/videos/bistro-capibara.mp4"
+            poster="/videos/bistro-capibara-poster.jpg"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="Bistro Capibara website preview"
+          ></video>
+        </div>
+        <div class="project-body">
+          <h3 class="project-item-title">Bistro Capibara</h3>
+          <ul class="project-tags">
+            <li>Landing</li>
+            <li>Animations</li>
+            <li>Responsive</li>
+          </ul>
+          <p class="project-item-text" data-lang="13">
+            A website for a bistro located at the Parrot House in Gdańsk,
+            designed to showcase the venue and its menu.
+          </p>
+          <button class="project-more" type="button" aria-expanded="false">
+            <span class="more-label" data-lang="read_more">Read more</span>
+            <span class="less-label" data-lang="read_less">Show less</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="project-btn-content">
+            <a
+              class="project-btn project-btn-accent"
+              href="https://bistro-capibara.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-lang="btn1"
+              ><i class="fa-solid fa-earth-europe"></i> Live page</a
+            >
           </div>
-          <div class="project-body">
-            <h3 class="project-item-title">Yavoryna</h3>
-            <ul class="project-tags">
-              <li>React</li>
-              <li>UI design</li>
-              <li>Hosting</li>
-            </ul>
-            <p class="project-item-text" data-lang="1">
-              Led end-to-end development of a React-based website for the
-              Yavoryna volunteer initiative, including UI design, frontend
-              implementation, deployment, and hosting setup.
-            </p>
-            <button class="project-more" type="button" aria-expanded="false">
-              <span class="more-label" data-lang="read_more">Read more</span>
-              <span class="less-label" data-lang="read_less">Show less</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="project-btn-content">
-              <a
-                class="project-btn project-btn-accent"
-                href="https://yavorynakam.dp.ua/"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-lang="btn1"
-                ><i class="fa-solid fa-earth-europe"></i> Live page</a
-              >
-            </div>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="swiper-slide project-item tilt">
-          <div class="project-media">
-            <img
-              class="project-img"
-              src="/images/project1.png"
-              alt="Phonebook"
-              width="250"
-              height="250"
-            />
+      <article class="project-item tilt">
+        <div class="project-media">
+          <img
+            class="project-img"
+            src="/images/project12.png"
+            alt="Yavoryna"
+            width="1484"
+            height="750"
+          />
+        </div>
+        <div class="project-body">
+          <h3 class="project-item-title">Yavoryna</h3>
+          <ul class="project-tags">
+            <li>React</li>
+            <li>UI design</li>
+            <li>Hosting</li>
+          </ul>
+          <p class="project-item-text" data-lang="1">
+            Led end-to-end development of a React-based website for the
+            Yavoryna volunteer initiative, including UI design, frontend
+            implementation, deployment, and hosting setup.
+          </p>
+          <button class="project-more" type="button" aria-expanded="false">
+            <span class="more-label" data-lang="read_more">Read more</span>
+            <span class="less-label" data-lang="read_less">Show less</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="project-btn-content">
+            <a
+              class="project-btn project-btn-accent"
+              href="https://yavorynakam.dp.ua/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-lang="btn1"
+              ><i class="fa-solid fa-earth-europe"></i> Live page</a
+            >
           </div>
-          <div class="project-body">
-            <h3 class="project-item-title">Phonebook</h3>
-            <ul class="project-tags">
-              <li>React</li>
-              <li>REST API</li>
-              <li>Auth</li>
-            </ul>
-            <p class="project-item-text" data-lang="2">
-              Developed a Phonebook application in React to store contacts.
-            </p>
-            <button class="project-more" type="button" aria-expanded="false">
-              <span class="more-label" data-lang="read_more">Read more</span>
-              <span class="less-label" data-lang="read_less">Show less</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="project-btn-content">
-              <a
-                class="project-btn project-btn-accent"
-                href="https://phonebook-tau-seven.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-lang="btn1"
-                ><i class="fa-solid fa-earth-europe"></i> Live page</a
-              >
-            </div>
-          </div>
-        </article>
-
-        <article class="swiper-slide project-item tilt">
-          <div class="project-media">
-            <img
-              class="project-img"
-              src="/images/project3.png"
-              alt="Filmoteka"
-              width="250"
-              height="250"
-            />
-          </div>
-          <div class="project-body">
-            <h3 class="project-item-title">Filmoteka</h3>
-            <ul class="project-tags">
-              <li>React</li>
-              <li>Vite</li>
-              <li>TMDB API</li>
-            </ul>
-            <p class="project-item-text" data-lang="3">
-              Filmoteka is a web application for searching movies using TMDB
-              API.
-            </p>
-            <button class="project-more" type="button" aria-expanded="false">
-              <span class="more-label" data-lang="read_more">Read more</span>
-              <span class="less-label" data-lang="read_less">Show less</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="project-btn-content">
-              <a
-                class="project-btn project-btn-accent"
-                href="https://filmoteka-eta.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-lang="btn1"
-                ><i class="fa-solid fa-earth-europe"></i> Live page</a
-              >
-            </div>
-          </div>
-        </article>
-
-        <article class="swiper-slide project-item tilt">
-          <div class="project-media">
-            <img
-              class="project-img"
-              src="/images/project13.jpg"
-              alt="Bistro Capibara — Playful Restaurant Website"
-              width="250"
-              height="250"
-            />
-          </div>
-          <div class="project-body">
-            <h3 class="project-item-title">Bistro Capibara</h3>
-            <ul class="project-tags">
-              <li>Landing</li>
-              <li>Branding</li>
-              <li>Responsive</li>
-            </ul>
-            <p class="project-item-text" data-lang="13">
-              Bistro Capibara is a vibrant single-page restaurant website for a
-              pizzeria and bistro in Gdańsk, Poland.
-            </p>
-            <button class="project-more" type="button" aria-expanded="false">
-              <span class="more-label" data-lang="read_more">Read more</span>
-              <span class="less-label" data-lang="read_less">Show less</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="project-btn-content">
-              <a
-                class="project-btn project-btn-accent"
-                href="https://bistro-capibara.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-lang="btn1"
-                ><i class="fa-solid fa-earth-europe"></i> Live page</a
-              >
-            </div>
-          </div>
-        </article>
-
-        <article class="swiper-slide project-item tilt">
-          <div class="project-media">
-            <img
-              class="project-img"
-              src="/images/project10.png"
-              alt="Photography School"
-              width="250"
-              height="250"
-            />
-          </div>
-          <div class="project-body">
-            <h3 class="project-item-title">Photography School</h3>
-            <ul class="project-tags">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Team project</li>
-            </ul>
-            <p class="project-item-text" data-lang="10">
-              A sleek and informative landing page showcasing the photography
-              school.
-            </p>
-            <button class="project-more" type="button" aria-expanded="false">
-              <span class="more-label" data-lang="read_more">Read more</span>
-              <span class="less-label" data-lang="read_less">Show less</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="project-btn-content">
-              <a
-                class="project-btn project-btn-accent"
-                href="https://gudzsv.github.io/project-syntax-samurais-01/"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-lang="btn1"
-                ><i class="fa-solid fa-earth-europe"></i> Live page</a
-              >
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="swiper-controls">
-        <button class="swiper-button-prev-custom" type="button" aria-label="Previous project">
-          <i class="fas fa-arrow-left"></i>
-        </button>
-        <div class="swiper-pagination"></div>
-        <button class="swiper-button-next-custom" type="button" aria-label="Next project">
-          <i class="fas fa-arrow-right"></i>
-        </button>
-      </div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
