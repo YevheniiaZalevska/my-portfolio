@@ -19,15 +19,15 @@
 
 .project-container {
     position: relative;
-    max-width: 1240px;
+    max-width: 1360px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 28px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
     align-items: start;
 }
 
@@ -181,6 +181,14 @@
     transition: transform 0.3s var(--ease-out);
 }
 
+.project-more[hidden] {
+    display: none;
+}
+
+.project-more[hidden] + .project-btn-content {
+    margin-top: 1.4rem;
+}
+
 .project-more .less-label,
 .project-item.is-expanded .project-more .more-label {
     display: none;
@@ -232,7 +240,7 @@
 }
 
 
-@media (max-width: 1099px) {
+@media (max-width: 1199px) {
     .project-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }

@@ -144,7 +144,23 @@ document.querySelectorAll('.project-video').forEach(video => {
 
 /* ---------- Розгортання опису проєкту ---------- */
 
-document.querySelectorAll('.project-more').forEach(btn => {
+const moreButtons = document.querySelectorAll('.project-more');
+
+function updateMoreButtons() {
+  moreButtons.forEach(btn => {
+    const card = btn.closest('.project-item');
+    if (card.classList.contains('is-expanded')) return;
+    const text = card.querySelector('.project-item-text');
+    btn.hidden = text.scrollHeight <= text.clientHeight + 1;
+  });
+}
+
+window.addEventListener('load', updateMoreButtons);
+window.addEventListener('resize', updateMoreButtons);
+document.getElementById('languages')?.addEventListener('change', updateMoreButtons);
+updateMoreButtons();
+
+moreButtons.forEach(btn => {
   btn.addEventListener('click', () => {
     const card = btn.closest('.project-item');
     const expanded = card.classList.toggle('is-expanded');
