@@ -1,82 +1,164 @@
 #contacts {
-    background: linear-gradient(135deg, #510a12 30%, #803434 50%, #690f1d 100%);
+    position: relative;
+    overflow: hidden;
+    background: var(--c-bg-deep);
     color: #f0f0f0;
-    padding: 60px 0;
+    padding: 100px 0 40px;
     font-size: 1rem;
 }
 
+#contacts::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -40%;
+    width: 900px;
+    height: 600px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: radial-gradient(ellipse, rgba(128, 52, 52, 0.6), transparent 65%);
+    pointer-events: none;
+}
+
 .footer-content {
+    position: relative;
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 2rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     align-items: center;
+    text-align: center;
 }
 
-.footer-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #f7c99b;
-    position: relative;
-    text-align: center;
+.footer-cta {
+    max-width: 640px;
+    margin: -1rem 0 2.5rem;
+    font-family: var(--font-editorial);
+    font-size: clamp(1.4rem, 3.4vw, 2.1rem);
+    font-style: italic;
+    line-height: 1.35;
+    color: var(--c-cream);
 }
 
 .footer-dectop {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.25rem;
+}
+
+.footer-email {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.footer-email-link {
+    position: relative;
+    font-family: var(--font-display);
+    font-size: clamp(1.35rem, 4.5vw, 2.4rem);
+    font-weight: 700;
+    color: var(--c-accent);
+}
+
+.footer-email-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.45s var(--ease-out);
+}
+
+.footer-email-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.copy-btn {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(247, 231, 215, 0.25);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--c-cream);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.copy-btn:hover {
+    background: var(--c-accent);
+    border-color: var(--c-accent);
+    color: var(--c-bg);
+}
+
+.copy-btn.is-copied {
+    background: #8ce6a0;
+    border-color: #8ce6a0;
+    color: var(--c-bg);
+}
+
+.footer-phone {
+    color: var(--c-muted);
+    font-size: 1.05rem;
+    transition: color 0.3s ease;
+}
+
+.footer-phone:hover {
+    color: var(--c-cream);
 }
 
 .footer-soc-list {
     display: flex;
-    gap: 1.5rem;
-    list-style: none;
-    padding: 0;
+    gap: 1rem;
+    margin-top: 0.75rem;
 }
 
 .footer-soc-item a {
-    font-size: 1.5rem;
+    width: 56px;
+    height: 56px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border: 1px solid rgba(247, 231, 215, 0.2);
+    font-size: 1.35rem;
     color: #f0dfc8;
-    transition: color 0.3s, transform 0.3s;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        translate 0.25s var(--ease-out);
 }
 
 .footer-soc-item a:hover {
-    color: #f7c99b;
-    transform: scale(1.2);
+    background: var(--c-accent);
+    border-color: var(--c-accent);
+    color: var(--c-bg);
 }
 
-.footer-address-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: center;
-}
-
-.footer-address-item a {
-    color: #f0dfc8;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-address-item a:hover {
-    color: #f7c99b;
+.footer-copy {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    width: 100%;
+    border-top: 1px solid var(--c-line);
+    color: var(--c-muted);
+    font-size: 0.85rem;
 }
 
 @media (max-width: 768px) {
-    /* .footer-title {
-        font-size: 1.6rem;
-    } */
-
-    .footer-soc-list {
-        gap: 1rem;
+    #contacts {
+        padding: 70px 0 30px;
     }
 
-    .footer-address-item a {
-        font-size: 0.95rem;
+    .footer-content {
+        padding: 0 1rem;
     }
 }

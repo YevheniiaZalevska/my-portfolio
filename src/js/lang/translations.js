@@ -29,7 +29,19 @@ export const translations = {
     lang_pl: "Polish - Intermediate",
     certificates: `My certifications`,
     tbnc: `<i class="fas fa-download"></i> Download certificate`,
-    wv: `Web Vitals`
+    wv: `Web Vitals`,
+    nav_about: `About`,
+    projects_title: `My projects`,
+    hero_tagline: `React · JavaScript · From UI to deployment`,
+    hero_cta_projects: `View projects`,
+    hero_cta_contact: `Get in touch`,
+    stat_projects: `Projects shipped`,
+    stat_years: `Years in frontend`,
+    stat_langs: `Spoken languages`,
+    read_more: `Read more`,
+    read_less: `Show less`,
+    contact_cta: `Have a project in mind? Let's build something great together.`,
+    copied: `Email copied to clipboard`
   },
 
   ua: {
@@ -62,6 +74,18 @@ export const translations = {
     lang_pl: "Польська — В1",
     certificates: `Мої сертифікати`,
     tbnc: `<i class="fas fa-download"></i> Завантажити сертифікат`,
-    wv: `Веб-показники`
+    wv: `Веб-показники`,
+    nav_about: `Про мене`,
+    projects_title: `Мої проєкти`,
+    hero_tagline: `React · JavaScript · Від інтерфейсу до деплою`,
+    hero_cta_projects: `Переглянути проєкти`,
+    hero_cta_contact: `Зв'язатися`,
+    stat_projects: `Готових проєктів`,
+    stat_years: `Роки у фронтенді`,
+    stat_langs: `Мови спілкування`,
+    read_more: `Читати далі`,
+    read_less: `Згорнути`,
+    contact_cta: `Маєте ідею проєкту? Створімо щось чудове разом.`,
+    copied: `E-mail скопійовано`
   }
 };

@@ -8,6 +8,34 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  /* Палітра */
+  --c-bg: #34070e;
+  --c-bg-deep: #230409;
+  --c-wine: #510a12;
+  --c-wine-light: #803434;
+  --c-accent: #f7c99b;
+  --c-accent-strong: #f0a872;
+  --c-cream: #f7e7d7;
+  --c-text: #f5dfcf;
+  --c-muted: rgba(245, 223, 207, 0.62);
+  --c-line: rgba(247, 231, 215, 0.12);
+  --c-surface: rgba(255, 245, 236, 0.05);
+  --c-surface-hover: rgba(255, 245, 236, 0.09);
+
+  --grad-wine: linear-gradient(135deg, #510a12 30%, #803434 50%, #690f1d 100%);
+  --grad-accent: linear-gradient(120deg, #f7c99b, #f0a872 50%, #f7e7d7);
+
+  --radius: 18px;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --header-h: 72px;
+
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-h) + 12px);
 }
 
 body {
@@ -16,6 +44,13 @@ body {
   --font-editorial: "Playfair Display", serif;
 
   font-family: var(--font-body);
+  background-color: var(--c-bg);
+  color: var(--c-text);
+  overflow-x: hidden;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 * {
@@ -24,7 +59,280 @@ body {
   box-sizing: border-box;
 }
 
+::selection {
+  background: var(--c-accent);
+  color: var(--c-bg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--c-accent);
+  outline-offset: 3px;
+}
 
 .fade-in {
   animation: fadeIn 1s ease-in-out both;
+}
+
+/* ------------------------------ ЗАГОЛОВКИ СЕКЦІЙ ------------------------------ */
+
+.section-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.9rem;
+  margin-bottom: 2.75rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--c-cream);
+  text-align: center;
+}
+
+.section-title > span:last-child {
+  background: var(--grad-accent);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shine 6s linear infinite;
+}
+
+.section-eyebrow {
+  font-family: var(--font-editorial);
+  font-size: 0.45em;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--c-accent);
+  opacity: 0.7;
+}
+
+.section-title-sm {
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  margin-bottom: 1.75rem;
+}
+
+/* ------------------------------ КНОПКИ ------------------------------ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease,
+    translate 0.25s var(--ease-out);
+}
+
+.btn i {
+  font-size: 0.85em;
+  transition: transform 0.3s var(--ease-out);
+}
+
+.btn:hover i {
+  transform: translateY(2px);
+}
+
+.btn-primary {
+  background: var(--c-accent);
+  color: var(--c-bg);
+  box-shadow: 0 10px 30px -10px rgba(247, 201, 155, 0.6);
+}
+
+.btn-primary:hover {
+  background: var(--c-cream);
+  box-shadow: 0 14px 36px -8px rgba(247, 201, 155, 0.75);
+}
+
+.btn-ghost {
+  color: var(--c-cream);
+  box-shadow: inset 0 0 0 1px rgba(247, 231, 215, 0.3);
+}
+
+.btn-ghost:hover {
+  background: var(--c-surface-hover);
+  box-shadow: inset 0 0 0 1px rgba(247, 231, 215, 0.6);
+}
+
+/* ------------------------------ ПРОГРЕС ПРОКРУТКИ ------------------------------ */
+
+.scroll-progress {
+  position: fixed;
+  inset: 0 0 auto;
+  height: 3px;
+  z-index: 200;
+  background: var(--grad-accent);
+  transform-origin: left;
+  transform: scaleX(var(--progress, 0));
+  pointer-events: none;
+}
+
+/* ------------------------------ СВІТІННЯ КУРСОРУ ------------------------------ */
+
+.cursor-glow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 420px;
+  height: 420px;
+  margin: -210px 0 0 -210px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(247, 201, 155, 0.13), transparent 65%);
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  transform: translate(var(--x, -500px), var(--y, -500px));
+  transition: opacity 0.4s ease;
+  mix-blend-mode: screen;
+}
+
+.cursor-glow.is-active {
+  opacity: 1;
+}
+
+/* ------------------------------ КНОПКА "ВГОРУ" ------------------------------ */
+
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 150;
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border: none;
+  border-radius: 50%;
+  background: rgba(35, 4, 9, 0.85);
+  backdrop-filter: blur(8px);
+  color: var(--c-cream);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(16px);
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s var(--ease-out),
+    background-color 0.3s ease;
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: var(--c-wine);
+}
+
+.back-to-top svg {
+  position: absolute;
+  inset: 0;
+  transform: rotate(-90deg);
+}
+
+.back-to-top circle {
+  fill: none;
+  stroke-width: 2.5;
+}
+
+.back-to-top-track {
+  stroke: var(--c-line);
+}
+
+.back-to-top-ring {
+  stroke: var(--c-accent);
+  stroke-linecap: round;
+}
+
+/* ------------------------------ ЛАЙТБОКС ------------------------------ */
+
+.lightbox {
+  max-width: min(92vw, 1100px);
+  max-height: 90vh;
+  margin: auto;
+  padding: 0;
+  border: none;
+  border-radius: var(--radius);
+  background: transparent;
+  overflow: visible;
+}
+
+.lightbox[open] {
+  animation: zoomIn 0.35s var(--ease-out);
+}
+
+.lightbox::backdrop {
+  background: rgba(20, 2, 5, 0.85);
+  backdrop-filter: blur(6px);
+}
+
+.lightbox-img {
+  max-width: 100%;
+  max-height: 90vh;
+  border-radius: var(--radius);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: var(--c-accent);
+  color: var(--c-bg);
+  font-size: 1.1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* ------------------------------ TOAST ------------------------------ */
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 28px;
+  z-index: 250;
+  padding: 0.8rem 1.3rem;
+  border-radius: 999px;
+  background: var(--c-cream);
+  color: var(--c-bg);
+  font-weight: 600;
+  font-size: 0.92rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 20px);
+  transition: opacity 0.3s ease, transform 0.3s var(--ease-out);
+}
+
+.toast.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+/* ------------------------------ МЕНШЕ РУХУ ------------------------------ */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

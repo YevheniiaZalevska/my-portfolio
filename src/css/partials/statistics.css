@@ -1,10 +1,31 @@
 #statistics {
-    padding: 50px 0;
-    background-color: #34070e;
+    padding: 90px 0;
+    background-color: var(--c-bg-deep);
     position: relative;
     overflow: hidden;
 }
 
-.vp {
-    min-width: 350px;
+#statistics .cert-content {
+    align-items: stretch;
+}
+
+#statistics .cert-card {
+    flex: 1 1 300px;
+    max-width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.cert-img.vp {
+    width: 100%;
+    min-width: 0;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    #statistics {
+        padding: 60px 0;
+    }
 }

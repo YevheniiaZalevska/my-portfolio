@@ -1,37 +1,32 @@
-ScrollReveal().reveal('.about-me-text', {
-  delay: 300,
-  distance: '40px',
-  duration: 900,
-  origin: 'left',
-  interval: 200
-});
+import ScrollReveal from 'scrollreveal';
 
-ScrollReveal().reveal('.education-title', {
-  delay: 200,
-  distance: '30px',
-  duration: 800,
-  origin: 'top'
-});
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-ScrollReveal().reveal('.education-item', {
-  delay: 300,
-  distance: '40px',
-  duration: 900,
-  origin: 'bottom',
-  interval: 200
-});
+if (!reduceMotion) {
+  const sr = ScrollReveal({
+    distance: '40px',
+    duration: 900,
+    easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
+    cleanup: true,
+  });
 
-ScrollReveal().reveal('.cert-btn-content', {
-  delay: 300,
-  distance: '40px',
-  duration: 900,
-  origin: 'bottom'
-});
+  sr.reveal('.section-title', { origin: 'bottom', distance: '24px' });
+  sr.reveal('.about-me-text', { delay: 150, origin: 'left' });
+  sr.reveal('.stat', { delay: 200, origin: 'bottom', interval: 150 });
+  sr.reveal('.timeline-item', { delay: 200, origin: 'left', interval: 200 });
+  sr.reveal('.lang-item', { delay: 200, origin: 'right', interval: 150 });
+  sr.reveal('.cert-btn-content, #statistics .cert-card', {
+    delay: 200,
+    origin: 'bottom',
+    interval: 150,
+  });
+  sr.reveal('.footer-cta, .footer-dectop', { delay: 150, origin: 'bottom', interval: 150 });
+}
 
 const box = document.querySelector('.hero-poster-box');
 
 if (box) {
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 24; i++) {
     const dot = document.createElement('span');
     dot.classList.add('hero-dot');
     dot.style.cssText = `

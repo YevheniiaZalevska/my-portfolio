@@ -71,6 +71,11 @@
 }
 
 /* UX UI WEB */
+.hero-poster-box [data-depth] {
+    transition: translate 0.6s var(--ease-out);
+    will-change: translate;
+}
+
 .hero-left-tags {
     position: absolute;
     top: 40%;
@@ -84,12 +89,20 @@
 
 .hero-left-tags span {
     display: block;
+    transition: color 0.3s ease, transform 0.4s var(--ease-out);
+    pointer-events: auto;
+    cursor: default;
     font-size: 7cqi;
     line-height: 0.95;
     font-weight: 900;
     color: #f7c99b;
     text-transform: uppercase;
     font-family: var(--font-display);
+}
+
+.hero-left-tags span:hover {
+    color: #f7e7d7;
+    transform: translateX(8px) skewX(-8deg);
 }
 
 /* Фото */
@@ -224,3 +237,61 @@
         text-align: right;
     }
 } */
+
+/* ------------------------------ HERO STRIP ------------------------------ */
+
+.hero-poster {
+    background: var(--c-bg);
+}
+
+.hero-strip {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem 2rem;
+    padding: 1.4rem clamp(1rem, 4vw, 2.5rem);
+    background: var(--c-bg-deep);
+    border-bottom: 1px solid var(--c-line);
+}
+
+.hero-strip-text {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--c-muted);
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+}
+
+.hero-strip-dot {
+    width: 9px;
+    height: 9px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #8ce6a0;
+    animation: pulseRing 1.8s ease-out infinite;
+}
+
+.hero-strip-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+@media (max-width: 600px) {
+    .hero-strip {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .hero-strip-text {
+        justify-content: center;
+    }
+
+    .hero-strip-actions .btn {
+        flex: 1;
+        justify-content: center;
+    }
+}
