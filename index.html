@@ -9,13 +9,9 @@
     />
     <meta name="theme-color" content="#34070e" />
     <title>Yevheniia Zalevska — Frontend Developer</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
     <script type="module" crossorigin src="/my-portfolio/index.js"></script>
     <link rel="modulepreload" crossorigin href="/my-portfolio/assets/vendor-Be0Qd0M9.js">
-    <link rel="stylesheet" crossorigin href="/my-portfolio/assets/index-CYxC9ur7.css">
+    <link rel="stylesheet" crossorigin href="/my-portfolio/assets/index-C92IxUvv.css">
   </head>
   <body>
     <div class="scroll-progress" aria-hidden="true"></div>
@@ -102,24 +98,6 @@
       <span>DEVELOPER</span>
     </div>
   </div>
-
-  <div class="container hero-strip">
-    <p class="hero-strip-text">
-      <span class="hero-strip-dot" aria-hidden="true"></span>
-      <span data-lang="hero_tagline">React · JavaScript · From UI to deployment</span>
-    </p>
-
-    <div class="hero-strip-actions">
-      <a href="#projects" class="btn btn-primary magnetic">
-        <span data-lang="hero_cta_projects">View projects</span>
-        <i class="fas fa-arrow-down"></i>
-      </a>
-      <a href="#contacts" class="btn btn-ghost magnetic">
-        <span data-lang="hero_cta_contact">Get in touch</span>
-        <i class="fas fa-paper-plane"></i>
-      </a>
-    </div>
-  </div>
 </section>
 
       <section id="about-me" class="about-me">
@@ -141,37 +119,6 @@
       attention to detail.
     </p>
   </div>
-
-  <div class="skills" aria-label="Tech stack">
-    <ul class="skills-track">
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>Redux</li>
-      <li>Vite</li>
-      <li>REST API</li>
-      <li>Git &amp; GitHub</li>
-      <li>Responsive design</li>
-      <li>Vercel</li>
-      <li>AI tools</li>
-      <li>Agile / Scrum</li>
-    </ul>
-    <ul class="skills-track" aria-hidden="true">
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>Redux</li>
-      <li>Vite</li>
-      <li>REST API</li>
-      <li>Git &amp; GitHub</li>
-      <li>Responsive design</li>
-      <li>Vercel</li>
-      <li>AI tools</li>
-      <li>Agile / Scrum</li>
-    </ul>
-  </div>
 </section>
 
       <section id="projects">
@@ -180,213 +127,89 @@
       <span data-lang="projects_title">My projects</span>
     </h2>
 
-    <div class="swiper swiper-container">
-      <div class="swiper-wrapper">
-        <article class="swiper-slide project-item tilt">
-          <div class="project-media">
-            <img
-              class="project-img"
-              src="/my-portfolio/assets/project12-BD4z04Kq.png"
-              alt="Yavoryna"
-              width="250"
-              height="250"
-            />
+    <div class="project-grid">
+      <article class="project-item tilt">
+        <div class="project-media">
+          <video
+            class="project-img project-video"
+            src="/my-portfolio/videos/bistro-capibara.mp4"
+            poster="/my-portfolio/videos/bistro-capibara-poster.jpg"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="Bistro Capibara website preview"
+          ></video>
+        </div>
+        <div class="project-body">
+          <h3 class="project-item-title">Bistro Capibara</h3>
+          <ul class="project-tags">
+            <li>Landing</li>
+            <li>Animations</li>
+            <li>Responsive</li>
+          </ul>
+          <p class="project-item-text" data-lang="13">
+            A website for a bistro located at the Parrot House in Gdańsk,
+            designed to showcase the venue and its menu.
+          </p>
+          <button class="project-more" type="button" aria-expanded="false">
+            <span class="more-label" data-lang="read_more">Read more</span>
+            <span class="less-label" data-lang="read_less">Show less</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="project-btn-content">
+            <a
+              class="project-btn project-btn-accent"
+              href="https://bistro-capibara.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-lang="btn1"
+              ><i class="fa-solid fa-earth-europe"></i> Live page</a
+            >
           </div>
-          <div class="project-body">
-            <h3 class="project-item-title">Yavoryna</h3>
-            <ul class="project-tags">
-              <li>React</li>
-              <li>UI design</li>
-              <li>Hosting</li>
-            </ul>
-            <p class="project-item-text" data-lang="1">
-              Led end-to-end development of a React-based website for the
-              Yavoryna volunteer initiative, including UI design, frontend
-              implementation, deployment, and hosting setup.
-            </p>
-            <button class="project-more" type="button" aria-expanded="false">
-              <span class="more-label" data-lang="read_more">Read more</span>
-              <span class="less-label" data-lang="read_less">Show less</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="project-btn-content">
-              <a
-                class="project-btn project-btn-accent"
-                href="https://yavorynakam.dp.ua/"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-lang="btn1"
-                ><i class="fa-solid fa-earth-europe"></i> Live page</a
-              >
-            </div>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="swiper-slide project-item tilt">
-          <div class="project-media">
-            <img
-              class="project-img"
-              src="/my-portfolio/assets/project1-B_r_Kv4j.png"
-              alt="Phonebook"
-              width="250"
-              height="250"
-            />
+      <article class="project-item tilt">
+        <div class="project-media">
+          <img
+            class="project-img"
+            src="/my-portfolio/assets/project12-BD4z04Kq.png"
+            alt="Yavoryna"
+            width="1484"
+            height="750"
+          />
+        </div>
+        <div class="project-body">
+          <h3 class="project-item-title">Yavoryna</h3>
+          <ul class="project-tags">
+            <li>React</li>
+            <li>UI design</li>
+            <li>Hosting</li>
+          </ul>
+          <p class="project-item-text" data-lang="1">
+            Led end-to-end development of a React-based website for the
+            Yavoryna volunteer initiative, including UI design, frontend
+            implementation, deployment, and hosting setup.
+          </p>
+          <button class="project-more" type="button" aria-expanded="false">
+            <span class="more-label" data-lang="read_more">Read more</span>
+            <span class="less-label" data-lang="read_less">Show less</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="project-btn-content">
+            <a
+              class="project-btn project-btn-accent"
+              href="https://yavorynakam.dp.ua/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-lang="btn1"
+              ><i class="fa-solid fa-earth-europe"></i> Live page</a
+            >
           </div>
-          <div class="project-body">
-            <h3 class="project-item-title">Phonebook</h3>
-            <ul class="project-tags">
-              <li>React</li>
-              <li>REST API</li>
-              <li>Auth</li>
-            </ul>
-            <p class="project-item-text" data-lang="2">
-              Developed a Phonebook application in React to store contacts.
-            </p>
-            <button class="project-more" type="button" aria-expanded="false">
-              <span class="more-label" data-lang="read_more">Read more</span>
-              <span class="less-label" data-lang="read_less">Show less</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="project-btn-content">
-              <a
-                class="project-btn project-btn-accent"
-                href="https://phonebook-tau-seven.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-lang="btn1"
-                ><i class="fa-solid fa-earth-europe"></i> Live page</a
-              >
-            </div>
-          </div>
-        </article>
-
-        <article class="swiper-slide project-item tilt">
-          <div class="project-media">
-            <img
-              class="project-img"
-              src="/my-portfolio/assets/project3-BkvdyT6O.png"
-              alt="Filmoteka"
-              width="250"
-              height="250"
-            />
-          </div>
-          <div class="project-body">
-            <h3 class="project-item-title">Filmoteka</h3>
-            <ul class="project-tags">
-              <li>React</li>
-              <li>Vite</li>
-              <li>TMDB API</li>
-            </ul>
-            <p class="project-item-text" data-lang="3">
-              Filmoteka is a web application for searching movies using TMDB
-              API.
-            </p>
-            <button class="project-more" type="button" aria-expanded="false">
-              <span class="more-label" data-lang="read_more">Read more</span>
-              <span class="less-label" data-lang="read_less">Show less</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="project-btn-content">
-              <a
-                class="project-btn project-btn-accent"
-                href="https://filmoteka-eta.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-lang="btn1"
-                ><i class="fa-solid fa-earth-europe"></i> Live page</a
-              >
-            </div>
-          </div>
-        </article>
-
-        <article class="swiper-slide project-item tilt">
-          <div class="project-media">
-            <img
-              class="project-img"
-              src="/my-portfolio/assets/project13-CZa-ui6c.jpg"
-              alt="Bistro Capibara — Playful Restaurant Website"
-              width="250"
-              height="250"
-            />
-          </div>
-          <div class="project-body">
-            <h3 class="project-item-title">Bistro Capibara</h3>
-            <ul class="project-tags">
-              <li>Landing</li>
-              <li>Branding</li>
-              <li>Responsive</li>
-            </ul>
-            <p class="project-item-text" data-lang="13">
-              Bistro Capibara is a vibrant single-page restaurant website for a
-              pizzeria and bistro in Gdańsk, Poland.
-            </p>
-            <button class="project-more" type="button" aria-expanded="false">
-              <span class="more-label" data-lang="read_more">Read more</span>
-              <span class="less-label" data-lang="read_less">Show less</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="project-btn-content">
-              <a
-                class="project-btn project-btn-accent"
-                href="https://bistro-capibara.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-lang="btn1"
-                ><i class="fa-solid fa-earth-europe"></i> Live page</a
-              >
-            </div>
-          </div>
-        </article>
-
-        <article class="swiper-slide project-item tilt">
-          <div class="project-media">
-            <img
-              class="project-img"
-              src="/my-portfolio/assets/project10-BzdZArz4.png"
-              alt="Photography School"
-              width="250"
-              height="250"
-            />
-          </div>
-          <div class="project-body">
-            <h3 class="project-item-title">Photography School</h3>
-            <ul class="project-tags">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Team project</li>
-            </ul>
-            <p class="project-item-text" data-lang="10">
-              A sleek and informative landing page showcasing the photography
-              school.
-            </p>
-            <button class="project-more" type="button" aria-expanded="false">
-              <span class="more-label" data-lang="read_more">Read more</span>
-              <span class="less-label" data-lang="read_less">Show less</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="project-btn-content">
-              <a
-                class="project-btn project-btn-accent"
-                href="https://gudzsv.github.io/project-syntax-samurais-01/"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-lang="btn1"
-                ><i class="fa-solid fa-earth-europe"></i> Live page</a
-              >
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="swiper-controls">
-        <button class="swiper-button-prev-custom" type="button" aria-label="Previous project">
-          <i class="fas fa-arrow-left"></i>
-        </button>
-        <div class="swiper-pagination"></div>
-        <button class="swiper-button-next-custom" type="button" aria-label="Next project">
-          <i class="fas fa-arrow-right"></i>
-        </button>
-      </div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -447,7 +270,7 @@
             <span class="edu-school">WSB Merito University Gdańsk</span> —
             <span class="edu-role">Master's degree, Web Application Programming</span
             ><br />
-            <span class="edu-note">Postgraduate: Occupational Health &amp; Safety with internal OHS auditor certificate · Part-time, hybrid</span
+            <span class="edu-note"><strong class="edu-label">Postgraduate:</strong> Occupational Health &amp; Safety with internal OHS auditor certificate · Part-time, hybrid</span
             ><br />
             <span class="edu-dates">October 2026 – 2028</span>
           </p>
@@ -455,7 +278,7 @@
         <li class="timeline-item">
           <span class="timeline-dot" aria-hidden="true"></span>
           <p class="education-text" data-lang="edu_it">
-            <span class="edu-school">University Merito WSB</span> —
+            <span class="edu-school">WSB Merito University Gdańsk</span> —
             <span class="edu-role">Frontend Developer, Engineering degree</span
             ><br />
             <span class="edu-dates">2022 – 2026</span>
