@@ -9,9 +9,13 @@
     />
     <meta name="theme-color" content="#34070e" />
     <title>Yevheniia Zalevska — Frontend Developer</title>
-    <script type="module" crossorigin src="/my-portfolio/index-Cb5q3-L0.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css"
+    />
+    <script type="module" crossorigin src="/my-portfolio/index-B8HuzSrB.js"></script>
     <link rel="modulepreload" crossorigin href="/my-portfolio/assets/vendor-Be0Qd0M9.js">
-    <link rel="stylesheet" crossorigin href="/my-portfolio/assets/index-BbPYn8Qx.css">
+    <link rel="stylesheet" crossorigin href="/my-portfolio/assets/index-DTx0yXE7.css">
   </head>
   <body>
     <div class="scroll-progress" aria-hidden="true"></div>
@@ -119,8 +123,9 @@
       <span data-lang="projects_title">My projects</span>
     </h2>
 
-    <div class="project-grid">
-      <article class="project-item tilt">
+    <div class="swiper project-slider">
+      <div class="swiper-wrapper">
+      <article class="swiper-slide project-item tilt">
         <div class="project-media project-media-video">
           <video
             class="project-img project-video"
@@ -164,7 +169,7 @@
         </div>
       </article>
 
-      <article class="project-item tilt">
+      <article class="swiper-slide project-item tilt">
         <div class="project-media project-media-video">
           <video
             class="project-img project-video"
@@ -208,7 +213,7 @@
         </div>
       </article>
 
-      <article class="project-item tilt">
+      <article class="swiper-slide project-item tilt">
         <div class="project-media project-media-video">
           <video
             class="project-img project-video"
@@ -252,7 +257,7 @@
         </div>
       </article>
 
-      <article class="project-item tilt">
+      <article class="swiper-slide project-item tilt">
         <div class="project-media project-media-video">
           <video
             class="project-img project-video"
@@ -295,6 +300,17 @@
           </div>
         </div>
       </article>
+      </div>
+    </div>
+
+    <div class="slider-controls">
+      <button class="slider-btn slider-prev" type="button" aria-label="Previous project">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <div class="swiper-pagination"></div>
+      <button class="slider-btn slider-next" type="button" aria-label="Next project">
+        <i class="fas fa-arrow-right"></i>
+      </button>
     </div>
   </div>
 </section>
