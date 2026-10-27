@@ -3,10 +3,9 @@ import { t } from './lang/lang.js';
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
-/* ---------- Прогрес прокрутки, шапка, кнопка "вгору" ---------- */
+/* ---------- Прогрес прокрутки, кнопка "вгору" ---------- */
 
 const progressBar = document.querySelector('.scroll-progress');
-const header = document.querySelector('.site-header');
 const backToTop = document.querySelector('.back-to-top');
 const ring = document.querySelector('.back-to-top-ring');
 const RING_LENGTH = 2 * Math.PI * 21;
@@ -18,7 +17,6 @@ function onScroll() {
   const progress = max > 0 ? window.scrollY / max : 0;
 
   progressBar?.style.setProperty('--progress', progress);
-  header?.classList.toggle('is-scrolled', window.scrollY > 20);
   backToTop?.classList.toggle('is-visible', window.scrollY > 600);
   if (ring) ring.style.strokeDashoffset = RING_LENGTH * (1 - progress);
 }

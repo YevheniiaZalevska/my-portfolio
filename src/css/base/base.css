@@ -28,14 +28,12 @@
 
   --radius: 18px;
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
-  --header-h: 72px;
 
   color-scheme: dark;
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--header-h) + 12px);
 }
 
 body {

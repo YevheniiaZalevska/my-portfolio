@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     hero_name: "Yevheniia Zalevska",
-    about_text: `Hi! My name is <strong class="hero-name">\${name}</strong>. Frontend Developer with hands-on experience building responsive websites and single-page applications using HTML, CSS, JavaScript, React, and Redux. Worked on commercial and freelance projects, collaborated in Agile/Scrum teams, and participated in website development, deployment, and client-oriented delivery. Focused on creating user-friendly interfaces, solving problems effectively, and continuously improving technical skills.`,
+    about_text: `<p>Hi! My name is <strong class="hero-name">\${name}</strong>. I'm a Frontend Developer with hands-on experience building responsive websites and single-page applications using HTML, CSS, JavaScript, React, and Redux. I've worked on commercial and freelance projects, collaborated in Agile/Scrum teams, and participated in website development, deployment, and client-oriented delivery.</p><p>I also work with AI tools to create websites, posters, videos, and other digital content, combining technical skills with creativity to bring ideas to life. I'm passionate about building user-friendly interfaces, exploring new technologies, solving problems effectively, and continuously improving my skills.</p>`,
     download_cv: `<i class="fas fa-download"></i> Download CV`,
     skills: `Skills`,
     projects: `Projects`,
@@ -41,7 +41,7 @@ export const translations = {
 
   ua: {
     hero_name: "Євгенія Залевська",
-    about_text: `Привіт! Мене звати <strong class="hero-name">\${name}</strong>. Frontend Developer з практичним досвідом створення адаптивних вебсайтів і односторінкових застосунків із використанням HTML, CSS, JavaScript, React та Redux. Працювала над комерційними й фриланс-проєктами, співпрацювала в командах Agile/Scrum, брала участь у розробці сайтів, деплої та орієнтованій на клієнта реалізації проєктів. Зосереджена на створенні зручних для користувача інтерфейсів, ефективному розв’язанні проблем і постійному вдосконаленні технічних навичок.`,
+    about_text: `<p>Привіт! Мене звати <strong class="hero-name">\${name}</strong>. Я Frontend Developer із практичним досвідом розробки адаптивних вебсайтів і односторінкових застосунків із використанням HTML, CSS, JavaScript, React і Redux. Працювала над комерційними та фриланс-проєктами, співпрацювала в командах за методологією Agile/Scrum і брала участь у розробці, розгортанні та запуску вебсайтів з урахуванням потреб клієнтів.</p><p>Також я активно використовую інструменти штучного інтелекту для створення вебсайтів, постерів, відео та іншого цифрового контенту. Поєдную технічні навички з креативністю, щоб втілювати ідеї в життя. Прагну створювати зручні інтерфейси, ефективно розв'язувати проблеми, досліджувати нові технології та постійно вдосконалювати свої навички.</p>`,
     download_cv: `<i class="fas fa-download"></i> Завантажити резюме`,
     skills: `Навички`,
     projects: `Проєкти`,
