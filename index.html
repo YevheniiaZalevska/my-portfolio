@@ -11,7 +11,7 @@
     <title>Yevheniia Zalevska — Frontend Developer</title>
     <script type="module" crossorigin src="/my-portfolio/index.js"></script>
     <link rel="modulepreload" crossorigin href="/my-portfolio/assets/vendor-Be0Qd0M9.js">
-    <link rel="stylesheet" crossorigin href="/my-portfolio/assets/index-CLo18Kkq.css">
+    <link rel="stylesheet" crossorigin href="/my-portfolio/assets/index-BchZe5kQ.css">
   </head>
   <body>
     <div class="scroll-progress" aria-hidden="true"></div>
@@ -174,14 +174,20 @@
       </article>
 
       <article class="project-item tilt">
-        <div class="project-media">
-          <img
-            class="project-img"
-            src="/my-portfolio/assets/project12-BD4z04Kq.png"
-            alt="Yavoryna"
-            width="1484"
-            height="750"
-          />
+        <div class="project-media project-media-video">
+          <video
+            class="project-img project-video"
+            src="/my-portfolio/videos/yavoryna.mp4"
+            poster="/my-portfolio/videos/yavoryna-poster.jpg"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            width="720"
+            height="936"
+            aria-label="Yavoryna website preview"
+          ></video>
         </div>
         <div class="project-body">
           <h3 class="project-item-title">Yavoryna</h3>
@@ -204,6 +210,51 @@
             <a
               class="project-btn project-btn-accent"
               href="https://yavorynakam.dp.ua/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-lang="btn1"
+              ><i class="fa-solid fa-earth-europe"></i> Live page</a
+            >
+          </div>
+        </div>
+      </article>
+
+      <article class="project-item tilt">
+        <div class="project-media project-media-video">
+          <video
+            class="project-img project-video"
+            src="/my-portfolio/videos/sealine.mp4"
+            poster="/my-portfolio/videos/sealine-poster.jpg"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            width="720"
+            height="866"
+            aria-label="Sealine website preview"
+          ></video>
+        </div>
+        <div class="project-body">
+          <h3 class="project-item-title">Sealine</h3>
+          <ul class="project-tags">
+            <li>Landing</li>
+            <li>Calculator</li>
+            <li>Animations</li>
+          </ul>
+          <p class="project-item-text" data-lang="sealine">
+            A landing page for Sealine, a company specializing in short-term
+            and long-term rental management in Gdańsk.
+          </p>
+          <button class="project-more" type="button" aria-expanded="false">
+            <span class="more-label" data-lang="read_more">Read more</span>
+            <span class="less-label" data-lang="read_less">Show less</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="project-btn-content">
+            <a
+              class="project-btn project-btn-accent"
+              href="https://sealine-seven.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               data-lang="btn1"
