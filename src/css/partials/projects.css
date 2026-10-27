@@ -98,8 +98,14 @@
     transition: transform 0.8s var(--ease-out);
 }
 
+/* Відео показуємо у його власних пропорціях, без обрізання */
+.project-media-video {
+    aspect-ratio: auto;
+}
+
 .project-video {
-    object-position: center;
+    display: block;
+    height: auto;
 }
 
 .project-item:hover .project-img {
