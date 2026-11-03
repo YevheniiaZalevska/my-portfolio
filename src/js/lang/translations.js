@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     hero_name: "Yevheniia Zalevska",
-    about_text: `<p>Frontend Developer with experience in React and the entire website development process — from user interface design to deployment. I regularly use AI tools to efficiently create videos, graphics, digital content, and advertising banners. I understand the principles of capturing and maintaining audience attention, and I stay up to date with the latest trends and modern visual styles. I apply this knowledge to deliver effective commercial projects tailored to the needs of the target audience.</p>`,
+    about_text: `<p>Hi, I’m <strong class="hero-name">\${name}</strong>, a Frontend Developer with experience building responsive websites using React, including full end-to-end independent development (UI, implementation, deployment). Experienced in working within Agile/Scrum teams and delivering client-focused development. Additionally, I bring technical background from IT/Help Desk support experience (network and hardware setup, ticketing systems), which strengthens my problem-solving skills and attention to detail.</p><p>I also work with AI tools to create websites, posters, videos, and other digital content, combining technical skills with creativity to bring ideas to life. I'm passionate about building user-friendly interfaces, exploring new technologies, solving problems effectively, and continuously improving my skills.</p>`,
     download_cv: `<i class="fas fa-download"></i> Download CV`,
     skills: `Skills`,
     projects: `Projects`,
@@ -41,7 +41,7 @@ export const translations = {
 
   ua: {
     hero_name: "Євгенія Залевська",
-    about_text: `<p>Frontend Developer із досвідом роботи з React і повним циклом розробки вебсайтів — від дизайну інтерфейсу до деплою. Регулярно використовую інструменти штучного інтелекту для ефективного створення відео, графіки, цифрового контенту та рекламних банерів. Розумію принципи залучення та утримання уваги аудиторії, слідкую за актуальними трендами й сучасними візуальними стилями. Застосовую ці знання для реалізації ефективних комерційних проєктів, адаптованих до потреб цільової аудиторії.</p>`,
+    about_text: `<p>Привіт, я <strong class="hero-name">\${name}</strong>, Frontend Developer із досвідом створення адаптивних вебсайтів на React, зокрема повністю самостійної розробки від початку до кінця (UI, реалізація, деплой). Маю досвід роботи в командах за методологією Agile/Scrum і розробки, орієнтованої на потреби клієнтів. Крім того, маю технічний досвід у сфері IT/Help Desk підтримки (налаштування мереж і обладнання, системи обробки заявок), що посилює мої навички розв'язання проблем і увагу до деталей.</p><p>Також я активно використовую інструменти штучного інтелекту для створення вебсайтів, постерів, відео та іншого цифрового контенту. Поєдную технічні навички з креативністю, щоб втілювати ідеї в життя. Прагну створювати зручні інтерфейси, ефективно розв'язувати проблеми, досліджувати нові технології та постійно вдосконалювати свої навички.</p>`,
     download_cv: `<i class="fas fa-download"></i> Завантажити резюме`,
     skills: `Навички`,
     projects: `Проєкти`,
